@@ -1,0 +1,23 @@
+{
+  "_about": "Official pages the knowledge base (RAG) is built from, by etl/build_knowledge.py. Every nutrient in nutrients.json adds its own NIH ODS health-professional fact sheet automatically; the topics below add herbs and other ingredients. 'names' are the ingredient names used in products.json and dsld_products.json, so a product is linked to its topic. All pages are US government works (public domain).",
+  "topics": [
+    {"topic": "omega_3", "title": "Omega-3 Fatty Acids", "names": ["Omega-3 Fish Oil"],
+     "pages": ["https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"]},
+    {"topic": "ashwagandha", "title": "Ashwagandha", "names": ["Ashwagandha"],
+     "pages": ["https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/", "https://www.nccih.nih.gov/health/ashwagandha"]},
+    {"topic": "turmeric", "title": "Turmeric", "names": ["Turmeric/Curcumin"],
+     "pages": ["https://www.nccih.nih.gov/health/turmeric"]},
+    {"topic": "ginger", "title": "Ginger", "names": ["Ginger Extract"],
+     "pages": ["https://www.nccih.nih.gov/health/ginger"]},
+    {"topic": "garlic", "title": "Garlic", "names": ["Garlic Extract"],
+     "pages": ["https://www.nccih.nih.gov/health/garlic"]},
+    {"topic": "melatonin", "title": "Melatonin", "names": ["Melatonin"],
+     "pages": ["https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"]},
+    {"topic": "coq10", "title": "Coenzyme Q10", "names": ["Coenzyme Q10"],
+     "pages": ["https://www.nccih.nih.gov/health/coenzyme-q10"]}
+  ],
+  "skip_sections": ["references", "key references", "other references", "disclaimer", "table of contents",
+                    "for more information", "acknowledgments", "acknowledgements", "nccih clearinghouse", "pubmed",
+                    "pubmed®", "know the science", "nih clinical research trials and you"],
+  "publishers": {"ods.od.nih.gov": "NIH Office of Dietary Supplements", "nccih.nih.gov": "NIH NCCIH"}
+}
