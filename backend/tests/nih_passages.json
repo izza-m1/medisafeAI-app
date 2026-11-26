@@ -1,0 +1,23 @@
+{
+  "_about": "A tiny knowledge base for tests: sentences quoted from the NIH ODS fact sheets, in the same format etl/build_knowledge.py writes to data/knowledge/chunks.json.",
+  "passages": [
+    {"id": "iron-0", "topic": "iron", "title": "Iron", "section": "Introduction", "subsection": null,
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/", "publisher": "NIH Office of Dietary Supplements",
+     "text": "Iron is a mineral that is naturally present in many foods. Iron is an essential component of hemoglobin, an erythrocyte protein that transfers oxygen from the lungs to the tissues."},
+    {"id": "iron-1", "topic": "iron", "title": "Iron", "section": "Health Risks from Excessive Iron", "subsection": null,
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/", "publisher": "NIH Office of Dietary Supplements",
+     "text": "Acute intakes of more than 20 mg/kg iron from supplements or medicines can lead to gastric upset."},
+    {"id": "iron-2", "topic": "iron", "title": "Iron", "section": "Interactions with Medications", "subsection": "Levothyroxine",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/", "publisher": "NIH Office of Dietary Supplements",
+     "text": "The labels for some of these products warn that iron supplements can reduce the absorption of levothyroxine tablets, and they advise against administering levothyroxine within 4 hours of iron supplements."},
+    {"id": "iron-3", "topic": "iron", "title": "Iron", "section": "Groups at Risk of Iron Inadequacy", "subsection": "Pregnant women",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/", "publisher": "NIH Office of Dietary Supplements",
+     "text": "During pregnancy, plasma volume and red cell mass expand due to dramatic increases in maternal red blood cell production. Iron deficiency during pregnancy increases the risk of maternal and infant mortality."},
+    {"id": "ashwagandha-0", "topic": "ashwagandha", "title": "Ashwagandha", "section": "Safety", "subsection": null,
+     "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/", "publisher": "NIH Office of Dietary Supplements",
+     "text": "Common side effects are mild and include stomach upset, loose stools, nausea, and drowsiness. Since then, the use of ashwagandha has been linked to acute liver injury in other individuals."},
+    {"id": "ashwagandha-1", "topic": "ashwagandha", "title": "Ashwagandha", "section": "Safety", "subsection": null,
+     "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/", "publisher": "NIH Office of Dietary Supplements",
+     "text": "Some experts advise against the use of ashwagandha by women who are pregnant. These findings suggest that ashwagandha might interact with thyroid hormone medications."}
+  ]
+}
