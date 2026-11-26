@@ -1,4 +1,4 @@
-// scanscreen.js — full-screen camera like the phone's own. One photo is enough; more sides optional.
+// full-screen camera like the phone's own. One photo is enough; more sides optional.
 import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, Image, Pressable, StyleSheet, Animated, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -6,7 +6,7 @@ import { CameraView, useCameraPermissions } from 'expo-camera';
 import * as ImagePicker from 'expo-image-picker';
 import * as Manipulator from 'expo-image-manipulator';
 import { Button, Icon, IconCircle, C, T } from '../ui';
-import { api, errorMessage } from '../config';
+import { api, errorMessage } from '../api';
 
 const STEPS = ['Checking the photo', 'Reading the label', 'Checking who made it'];
 
@@ -263,7 +263,6 @@ const s = StyleSheet.create({
                  backgroundColor: 'rgba(0,0,0,0.35)' },
   controlRow:  { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around' },
   sideBtn:     { width: 84, alignItems: 'center', gap: 6 },
-  galleryIcon: { width: 52, height: 52, borderRadius: 16, backgroundColor: 'rgba(255,255,255,0.22)', alignItems: 'center', justifyContent: 'center' },
   sideTxt:     { color: 'rgba(255,255,255,0.9)', fontSize: 13, fontWeight: '500' },
   shutter:     { width: 78, height: 78, borderRadius: 39, borderWidth: 4, borderColor: '#fff', alignItems: 'center', justifyContent: 'center' },
   shutterInner:{ width: 62, height: 62, borderRadius: 31, backgroundColor: '#fff' },

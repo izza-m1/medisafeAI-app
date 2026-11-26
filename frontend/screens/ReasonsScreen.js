@@ -1,10 +1,10 @@
-// purposescreen.js — "Why do you take it?"
+// "Why do you take it?"
 // Tap the box and the list drops down right under it. Tick as many reasons as you like (up to 5), tap again to untick.
 // "Other" opens a text box where you write your own reason. Only reasons this product is really used for are listed.
 import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Pressable, ScrollView, StyleSheet, ActivityIndicator } from 'react-native';
 import { Screen, Button, Icon, C, T } from '../ui';
-import { api } from '../config';
+import { api } from '../api';
 
 const MAX = 5;            // the server accepts at most 5 reasons
 

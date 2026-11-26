@@ -1,7 +1,8 @@
-// forms.js — form fields shared by Sign in, Sign up and Edit profile (used with Formik).
+// form fields shared by Sign in, Sign up and Edit profile (used with Formik).
 import React, { useState } from 'react';
 import { View, Text, TextInput, Pressable, Modal, StyleSheet, Platform } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import * as Yup from 'yup';
 import { Icon, C, T, Button } from './ui';
 
 // ── Date helpers: the form keeps "DD/MM/YYYY", the server gets "YYYY-MM-DD" ────
@@ -47,7 +48,7 @@ export function PasswordField({ show, onToggle, ...props }) {
     <Field icon="lock-closed-outline" secureTextEntry={!show} autoCapitalize="none" autoCorrect={false} {...props}
       right={onToggle ? (
         <Pressable onPress={onToggle} hitSlop={10} accessibilityLabel={show ? 'Hide password' : 'Show password'}>
-          <Icon name={show ? 'eye-off-outline' : 'eye-outline'} size={22} color={C.sub} />
+          <Text style={{ color: C.brand, fontSize: 14, fontWeight: '400' }}>{show ? 'Hide' : 'Show'}</Text>
         </Pressable>
       ) : null} />
   );
@@ -118,6 +119,69 @@ export function Choice({ label, options, value, onChange, error }) {
   );
 }
 
+// Same look as Choice, but any number of options can be ticked. value = list of chosen option values.
+export function MultiChoice({ label, help, options, value, onChange }) {
+  const toggle = v => onChange(value.includes(v) ? value.filter(x => x !== v) : [...value, v]);
+  return (
+    <View>
+      {label ? <Text style={f.label}>{label}</Text> : null}
+      {help ? <Text style={[f.choiceHelp, { marginBottom: 8 }]}>{help}</Text> : null}
+      <View style={f.choices}>
+        {options.map(o => {
+          const on = value.includes(o.value);
+          return (
+            <Pressable key={o.value} onPress={() => toggle(o.value)} accessibilityRole="checkbox"
+              accessibilityState={{ checked: on }} style={[f.choice, on && f.choiceOn]}>
+              <Icon name={on ? 'checkbox' : 'square-outline'} size={20} color={on ? C.brand : C.faint} />
+              <Text style={[f.choiceTxt, { flex: 1 }, on && { color: C.brandDark }]}>{o.label}</Text>
+            </Pressable>
+          );
+        })}
+      </View>
+    </View>
+  );
+}
+
+// A list typed in one box, separated by commas: "kidney stones, thyroid" -> ['kidney stones', 'thyroid']
+export const splitList = text => [...new Set((text || '').split(/[,\n]/).map(x => x.trim()).filter(Boolean))];
+export const joinList = items => (items || []).join(', ');
+export const LIST_LIMITS = { items: 8, length: 60 };     // the same limits the backend checks (schemas.py)
+
+// Typed lists (other medicines, other supplements, health conditions): at most LIST_LIMITS.items, each under LIST_LIMITS.length letters
+export const typedList = what => Yup.string()
+  .test('count', `Add at most ${LIST_LIMITS.items} ${what}.`, v => splitList(v).length <= LIST_LIMITS.items)
+  .test('length', `Keep each one under ${LIST_LIMITS.length} characters.`, v => splitList(v).every(x => x.length <= LIST_LIMITS.length));
+
+export const HEALTH_RULES = {
+  otherMedicines: typedList('medicines'),
+  otherSupplements: typedList('supplements'),
+  conditions: typedList('conditions'),
+};
+
+// Medicines, other supplements and health conditions. Used in sign up (optional step) and Edit profile.
+// medicines: the list the backend checks by rules (from /medicines); the rest are typed in the user's own words.
+export function HealthFields({ form, medicines, err }) {
+  const { values, handleChange, handleBlur, setFieldValue } = form;
+  return (
+    <View style={{ gap: 16 }}>
+      {medicines?.length ? (
+        <MultiChoice label="Do you take any of these medicines?" value={values.medicines} onChange={v => setFieldValue('medicines', v)}
+          help="Some supplements change how these medicines work."
+          options={medicines.map(m => ({ value: m.key, label: m.name }))} />
+      ) : null}
+      <Field label="Other medicines" icon="medkit-outline" value={values.otherMedicines}
+        onChangeText={handleChange('otherMedicines')} onBlur={handleBlur('otherMedicines')} error={err('otherMedicines')}
+        placeholder="warfarin, metformin" hint="Separate with commas. The AI checks them in the NIH fact sheets." />
+      <Field label="Other supplements you take" icon="nutrition-outline" value={values.otherSupplements}
+        onChangeText={handleChange('otherSupplements')} onBlur={handleBlur('otherSupplements')} error={err('otherSupplements')}
+        placeholder="Caltrate, zinc" hint="Each report checks them against what you scan." />
+      <Field label="Health conditions" icon="fitness-outline" value={values.conditions}
+        onChangeText={handleChange('conditions')} onBlur={handleBlur('conditions')} error={err('conditions')}
+        placeholder="kidney stones, thyroid" hint="Leave empty if none." />
+    </View>
+  );
+}
+
 // Plain blue text link, e.g. "Sign up" or "Forgot password?"
 export const LinkText = ({ children, onPress, style }) => (
   <Text onPress={onPress} style={[f.link, style]} accessibilityRole="link">{children}</Text>
@@ -132,10 +196,10 @@ export const PERIOD_OPTIONS = [
 export const periodLabel = v => (PERIOD_OPTIONS.find(o => o.value === v) || {}).label || 'Not set';
 
 const f = StyleSheet.create({
-  label:     { fontSize: 14, fontWeight: '600', color: C.sub, marginBottom: 6 },
-  box:       { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: 52, borderRadius: 12, borderWidth: 1.5,
-               borderColor: C.line, backgroundColor: '#fff', paddingHorizontal: 14 },
-  focus:     { borderColor: C.brand },
+  label:     { fontSize: 14, fontWeight: '600', color: C.ink, marginBottom: 7 },
+  box:       { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: 52, borderRadius: 14, borderWidth: 1.5,
+               borderColor: C.line, backgroundColor: C.soft, paddingHorizontal: 14 },
+  focus:     { borderColor: C.brand, backgroundColor: '#fff' },
   bad:       { borderColor: C.danger },
   input:     { flex: 1, minWidth: 0, fontSize: 16, color: C.ink, paddingVertical: 12 },
   err:       { color: C.danger, fontSize: 13, marginTop: 5 },
@@ -144,7 +208,7 @@ const f = StyleSheet.create({
   dim:       { flex: 1, backgroundColor: 'rgba(15,23,42,0.4)' },
   sheet:     { backgroundColor: '#fff', borderTopLeftRadius: 20, borderTopRightRadius: 20, padding: 20, paddingBottom: 34, gap: 8 },
   choices:   { gap: 8 },
-  choice:    { flexDirection: 'row', alignItems: 'center', gap: 12, borderRadius: 12, borderWidth: 1.5, borderColor: C.line,
+  choice:    { flexDirection: 'row', alignItems: 'center', gap: 12, borderRadius: 14, borderWidth: 1.5, borderColor: C.line,
                paddingHorizontal: 14, paddingVertical: 12, backgroundColor: '#fff' },
   choiceOn:  { borderColor: C.brand, backgroundColor: C.tint },
   radio:     { width: 20, height: 20, borderRadius: 10, borderWidth: 2, borderColor: C.faint, alignItems: 'center', justifyContent: 'center' },

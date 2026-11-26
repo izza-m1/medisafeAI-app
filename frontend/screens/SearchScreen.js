@@ -1,8 +1,8 @@
-// searchscreen.js — find a supplement by name. Typing "a" shows names starting with A, "app" narrows further.
+// find a supplement by name. Typing "a" shows names starting with A, "app" narrows further.
 import React, { useEffect, useMemo, useState } from 'react';
 import { View, Text, TextInput, Pressable, ScrollView, ActivityIndicator, StyleSheet } from 'react-native';
 import { Screen, Notice, Icon, C, T } from '../ui';
-import { api, errorMessage } from '../config';
+import { api, errorMessage } from '../api';
 
 // Names that start with the text first, then names with a later word that starts with it ("d3" → Calvit D3).
 function match(names, text) {
@@ -53,7 +53,7 @@ export default function SearchScreen({ navigation }) {
 
       {error ? <View style={{ marginBottom: 12 }}><Notice kind="stop">{error}</Notice></View> : null}
 
-      {names === null ? <ActivityIndicator color={C.brand} style={{ marginTop: 30 }} /> : (
+      {names === null ? <ActivityIndicator color={C.brand} style={{ marginTop: 30 }} /> : !names.length ? null : (
         <>
           <Text style={[T.small, { marginBottom: 8, marginLeft: 4 }]}>
             {text.trim() ? `${results.length} found` : `All ${names.length} supplements we can check`}
@@ -87,9 +87,9 @@ export default function SearchScreen({ navigation }) {
 
 const s = StyleSheet.create({
   box:   { flexDirection: 'row', alignItems: 'center', gap: 10, backgroundColor: '#fff', borderRadius: 16, paddingHorizontal: 16,
-           minHeight: 56, borderWidth: 2, borderColor: C.brand, marginBottom: 14 },
+           minHeight: 56, borderWidth: 1.5, borderColor: C.brand, marginBottom: 14 },
   input: { flex: 1, minWidth: 0, fontSize: 18, color: C.ink, paddingVertical: 12 },
-  card:  { backgroundColor: '#fff', borderRadius: 20, paddingHorizontal: 16 },
+  card:  { backgroundColor: '#fff', borderRadius: 18, paddingHorizontal: 16, borderWidth: 1, borderColor: C.line },
   row:   { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 15 },
   line:  { borderBottomWidth: 1, borderBottomColor: C.line },
   none:  { alignItems: 'center', gap: 10, paddingTop: 40, paddingHorizontal: 20 },

@@ -1,17 +1,17 @@
-// confirmscreen.js — "Is this your supplement?" Name, maker, who it's for, what we read — in one summary.
+// "Is this your supplement?" Name, maker, who it's for, what we read — in one summary.
 import React, { useCallback, useEffect, useState } from 'react';
-import { View, Text, TextInput, Image, Pressable, StyleSheet, Modal, ActivityIndicator, ScrollView } from 'react-native';
+import { View, Text, TextInput, Image, Pressable, StyleSheet, ActivityIndicator, ScrollView } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
-import { Screen, Button, Notice, Chip, Icon, IconCircle, C, T, shadow } from '../ui';
-import { api, getProfile, cachedProfile, describeProfile, errorMessage } from '../config';
+import { Screen, Button, Notice, Chip, Icon, C, T } from '../ui';
+import { api, getProfile, cachedProfile, describeProfile } from '../api';
 
 // Manufacturer line: "official" = the registered maker(s) of this brand in our data.
 const MAKER = {
   verified:          { status: 'ok',      chip: 'Genuine',       text: c => c.official?.length ? 'The pack shows the official maker of this brand.' : 'A registered manufacturer.' },
   verified_by_brand: { status: 'ok',      chip: 'Official maker', text: c => `Check that your pack shows ${c.official.join(' or ')}. If it shows a different company, it may be fake.` },
-  unregistered:      { status: 'caution', chip: 'Not registered', text: c => `"${c.printed_name}" is not in our list of registered manufacturers. Genuine packs show a registered maker and a DRAP registration number.` },
-  brand_seen:        { status: 'info',    chip: 'Not verified',   text: () => "This brand is not in our list of verified manufacturers, so we can't confirm it is genuine. Genuine packs show the maker's address and a DRAP registration number." },
-  not_found:         { status: 'info',    chip: 'Not seen',       text: () => "We couldn't see the maker's name. Genuine packs show the maker and a DRAP registration number. Buy from a licensed pharmacy." },
+  unregistered:      { status: 'caution', chip: 'Not registered', text: c => `"${c.printed_name}" is not in our list of registered manufacturers, so we can't confirm it is genuine. Buy from a licensed pharmacy.` },
+  brand_seen:        { status: 'info',    chip: 'Not verified',   text: () => "This brand is not in our list of verified manufacturers, so we can't confirm it is genuine. Buy from a licensed pharmacy." },
+  not_found:         { status: 'info',    chip: 'Not seen',       text: () => "We couldn't see the maker's name, so we can't confirm it is genuine. Buy from a licensed pharmacy." },
   mismatch:          { status: 'caution', chip: 'Check maker',    text: c => `This brand is usually made by ${c.expected}. Some brands are made under licence by another company. If your pack doesn't say "under licence", it may not be genuine.` },
 };
 
@@ -241,9 +241,8 @@ export default function ConfirmScreen({ route, navigation }) {
                 <Text style={T.h3}>{x.amount}</Text>
               </View>
             )) : <Text style={T.body}>{scan.product.source === 'search'
-              ? "You searched by name, so the report will use this product's usual strength."
-              : scan.product.dataset_key ? "We couldn't read the strength. The report will use this product's usual information."
-              : "We couldn't read the amounts in the photo."}</Text>}
+              ? "We have no official label for this product, so its dose can't be checked. Scan the back of the pack instead."
+              : "We couldn't read the amounts in the photo, so the dose can't be checked. Scan the back of the pack too."}</Text>}
             {label.composition_source ? (
               <Text style={[T.small, { marginTop: 6 }]}>Full ingredient list from {label.composition_source.name}. Check that the strength on your pack matches.</Text>
             ) : null}

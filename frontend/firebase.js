@@ -1,4 +1,4 @@
-// firebase.js — Firebase login (email + password). Paste your project's web config below.
+// firebase.js — Firebase login: email + password accounts, and guests (anonymous sign-in). Paste your project's web config below.
 // Firebase console → Project settings → General → Your apps → Web app → "SDK setup and configuration" → Config
 import { initializeApp } from 'firebase/app';
 import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
@@ -25,7 +25,10 @@ export function authMessage(e) {
   const code = e?.code || '';
   if (code.includes('invalid-credential') || code.includes('wrong-password') || code.includes('user-not-found'))
     return 'Email or password is wrong.';
-  if (code.includes('email-already-in-use')) return 'An account with this email already exists. Log in instead.';
+  if (code.includes('email-already-in-use') || code.includes('credential-already-in-use'))
+    return 'An account with this email already exists. Sign in instead.';
+  if (code.includes('operation-not-allowed') || code.includes('admin-restricted-operation'))
+    return 'Guest mode is switched off. Turn on Anonymous sign-in in the Firebase console.';
   if (code.includes('invalid-email')) return 'That email address is not valid.';
   if (code.includes('weak-password')) return 'Password must be at least 6 characters.';
   if (code.includes('network')) return 'No internet connection. Check your connection and try again.';

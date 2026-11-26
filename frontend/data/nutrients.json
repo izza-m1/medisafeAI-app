@@ -1,0 +1,311 @@
+{
+  "_about": "Nutrient cards on the home screen. Each card is a plain summary of the NIH Office of Dietary Supplements consumer fact sheet linked in source. need = daily amount for ages 19 to 50.",
+  "nutrients": [
+    {
+      "key": "iron",
+      "food": "1 cup of cooked lentils (daal) gives about 6 mg of iron: most of a man's daily need and a third of a woman's.",
+      "name": "Iron",
+      "icon": "water",
+      "tag": "A mineral your blood needs to carry oxygen to every part of your body.",
+      "does": "Iron helps red blood cells carry oxygen around your body. Low iron makes you tired and weak and can lead to anaemia.",
+      "good": "Women with periods need more iron than men. Tea and coffee block iron; vitamin C helps your body absorb it.",
+      "fruitsVeg": [
+        "Spinach",
+        "Lentils (daal)",
+        "Chickpeas",
+        "Kidney beans",
+        "Peas"
+      ],
+      "other": "Red meat, chicken liver, fish and eggs.",
+      "need": "Men 8 mg, women 18 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/Iron-Consumer/"
+    },
+    {
+      "key": "vitc",
+      "food": "One guava gives about 125 mg of vitamin C, more than a whole day's need.",
+      "name": "Vitamin C",
+      "icon": "nutrition",
+      "tag": "A vitamin found in fresh fruit that helps wounds heal and helps you absorb iron.",
+      "does": "Vitamin C helps wounds heal, keeps gums and skin healthy, supports the immune system and helps you absorb iron.",
+      "good": "Your body cannot store it, so you need some every day. Long cooking destroys much of it, so fresh fruit is best.",
+      "fruitsVeg": [
+        "Guava",
+        "Oranges and kinnow",
+        "Lemon",
+        "Strawberries",
+        "Tomatoes",
+        "Capsicum"
+      ],
+      "other": "Potatoes and green chillies also add some.",
+      "need": "Men 90 mg, women 75 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/"
+    },
+    {
+      "key": "vitd",
+      "food": "Food alone rarely covers it: one egg yolk gives only about 1 mcg (44 IU) of the 15 mcg you need.",
+      "name": "Vitamin D",
+      "icon": "sunny",
+      "tag": "The \"sunshine vitamin\" your skin makes in sunlight, needed for strong bones.",
+      "does": "Vitamin D helps your body absorb calcium, which keeps bones and teeth strong. It also supports muscles.",
+      "good": "Your skin makes vitamin D in sunlight. Very few foods contain it, which is why many people need a supplement.",
+      "fruitsVeg": [
+        "Mushrooms grown in sunlight (small amounts)"
+      ],
+      "other": "Sunlight, egg yolks, fish such as salmon, and fortified milk.",
+      "need": "15 mcg (600 IU) a day",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer/"
+    },
+    {
+      "key": "calcium",
+      "food": "1 cup of milk gives about 300 mg of calcium, so 3 cups of milk or yogurt cover most of your day.",
+      "name": "Calcium",
+      "icon": "body",
+      "tag": "The main mineral in your bones and teeth, also needed by your muscles and heart.",
+      "does": "Calcium builds strong bones and teeth and helps your muscles, nerves and heart work properly.",
+      "good": "Your body absorbs it best in amounts of 500 mg or less at a time. The calcium in spinach is poorly absorbed.",
+      "fruitsVeg": [
+        "Mustard greens (saag)",
+        "Broccoli",
+        "Okra (bhindi)",
+        "Cabbage"
+      ],
+      "other": "Milk, yogurt, cheese and almonds.",
+      "need": "1,000 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/Calcium-Consumer/"
+    },
+    {
+      "key": "b12",
+      "food": "1 cup of milk gives about 1.2 mcg of B12, so 2 cups of milk cover your whole day.",
+      "name": "Vitamin B12",
+      "icon": "flash",
+      "tag": "A vitamin from animal foods that keeps your nerves and blood cells healthy.",
+      "does": "Vitamin B12 helps make red blood cells and keeps your nerves and brain working well.",
+      "good": "Fruits and vegetables do not contain B12. Vegetarians and older adults are more likely to run low.",
+      "fruitsVeg": [
+        "None: B12 comes only from animal foods"
+      ],
+      "other": "Meat, fish, eggs, milk and yogurt.",
+      "need": "2.4 mcg a day",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/"
+    },
+    {
+      "key": "folate",
+      "food": "1 cup of cooked lentils gives about 360 mcg of folate, almost a whole day's need.",
+      "name": "Folate",
+      "icon": "heart",
+      "tag": "A B vitamin your body uses to make new cells, very important in pregnancy.",
+      "does": "Folate (folic acid) helps your body make new cells and DNA. It is especially important before and during early pregnancy.",
+      "good": "Folic acid before and in early pregnancy helps prevent birth defects of the baby's brain and spine.",
+      "fruitsVeg": [
+        "Spinach",
+        "Lentils",
+        "Chickpeas",
+        "Peas",
+        "Broccoli",
+        "Oranges"
+      ],
+      "other": "Beans, eggs and fortified flour.",
+      "need": "400 mcg a day (600 mcg in pregnancy)",
+      "source": "https://ods.od.nih.gov/factsheets/Folate-Consumer/"
+    },
+    {
+      "key": "potassium",
+      "food": "One medium banana gives about 420 mg of potassium; a medium potato with its skin gives about 900 mg.",
+      "name": "Potassium",
+      "icon": "pulse",
+      "tag": "A mineral that keeps your heartbeat steady and your blood pressure healthy.",
+      "does": "Potassium helps your heart beat steadily, your muscles move and keeps blood pressure in a healthy range.",
+      "good": "Most people get enough from food. People with kidney problems should not take potassium supplements without a doctor.",
+      "fruitsVeg": [
+        "Bananas",
+        "Potatoes",
+        "Dates",
+        "Apricots",
+        "Tomatoes",
+        "Spinach"
+      ],
+      "other": "Milk, yogurt and beans.",
+      "need": "Men 3,400 mg, women 2,600 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/Potassium-Consumer/"
+    },
+    {
+      "key": "vita",
+      "food": "Half a cup of raw carrots gives about 460 mcg of vitamin A: about half a man's daily need and two-thirds of a woman's.",
+      "name": "Vitamin A",
+      "icon": "eye",
+      "tag": "A vitamin that helps you see in dim light and keeps your skin healthy.",
+      "does": "Vitamin A helps you see in dim light and keeps your skin and immune system healthy.",
+      "good": "Too much vitamin A from supplements can be harmful, especially in pregnancy. Food sources are the safest.",
+      "fruitsVeg": [
+        "Carrots",
+        "Mangoes",
+        "Sweet potatoes",
+        "Pumpkin",
+        "Spinach",
+        "Apricots"
+      ],
+      "other": "Liver, eggs and milk.",
+      "need": "Men 900 mcg, women 700 mcg a day",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminA-Consumer/"
+    },
+    {
+      "key": "magnesium",
+      "food": "A small handful of almonds (about 23, or 28 g) gives 80 mg of magnesium, about a quarter of a woman's daily need.",
+      "name": "Magnesium",
+      "icon": "barbell",
+      "tag": "A mineral that helps your muscles, nerves and heart work and gives you energy.",
+      "does": "Magnesium helps your muscles and nerves work, keeps your heartbeat steady and helps turn food into energy.",
+      "good": "Too much from supplements can cause loose stools. Food sources do not cause this.",
+      "fruitsVeg": [
+        "Spinach",
+        "Bananas",
+        "Beans",
+        "Avocado"
+      ],
+      "other": "Almonds, cashews, seeds and whole wheat.",
+      "need": "Men 400 mg, women 310 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/Magnesium-Consumer/"
+    },
+    {
+      "key": "zinc",
+      "food": "85 g (3 oz) of cooked beef gives about 5 mg of zinc, roughly half a man's daily need.",
+      "name": "Zinc",
+      "icon": "shield-checkmark",
+      "tag": "A mineral that helps your body fight infections and heal wounds.",
+      "does": "Zinc helps your immune system fight germs, helps wounds heal and supports taste and smell.",
+      "good": "Taking a lot of zinc for a long time can lower your copper level. Stay within the safe limit.",
+      "fruitsVeg": [
+        "Chickpeas",
+        "Lentils",
+        "Peas",
+        "Beans"
+      ],
+      "other": "Meat, chicken, nuts and seeds.",
+      "need": "Men 11 mg, women 8 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/"
+    },
+    {
+      "key": "vitk",
+      "food": "Half a cup of cooked spinach gives about 440 mcg of vitamin K, several days' worth.",
+      "name": "Vitamin K",
+      "icon": "bandage",
+      "tag": "A vitamin from green leafy vegetables that helps your blood clot when you are cut.",
+      "does": "Vitamin K helps your blood clot when you are cut and helps keep bones healthy.",
+      "good": "If you take a blood-thinning medicine, keep the amount of green leafy vegetables steady and talk to your doctor.",
+      "fruitsVeg": [
+        "Spinach",
+        "Mustard greens (saag)",
+        "Broccoli",
+        "Cabbage",
+        "Lettuce"
+      ],
+      "other": "Vegetable oils such as soybean oil.",
+      "need": "Men 120 mcg, women 90 mcg a day",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminK-Consumer/"
+    },
+    {
+      "key": "vite",
+      "food": "A small handful of almonds (about 23) gives about 7 mg of vitamin E, almost half your daily need.",
+      "name": "Vitamin E",
+      "icon": "leaf",
+      "tag": "An antioxidant vitamin that protects your cells from damage.",
+      "does": "Vitamin E is an antioxidant: it protects your cells from damage and supports the immune system.",
+      "good": "High-dose vitamin E supplements can increase bleeding risk. Food sources are safe.",
+      "fruitsVeg": [
+        "Spinach",
+        "Broccoli",
+        "Mangoes",
+        "Kiwi"
+      ],
+      "other": "Almonds, sunflower seeds and vegetable oils.",
+      "need": "15 mg a day",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminE-Consumer/"
+    },
+    {
+      "key": "b6",
+      "name": "Vitamin B6",
+      "icon": "sparkles",
+      "tag": "A B vitamin that helps your body use protein and keeps your brain and nerves working.",
+      "does": "Vitamin B6 helps your body use protein, make red blood cells and keep your brain and immune system working well.",
+      "good": "Very high doses from supplements taken for a long time can damage nerves, causing numb or tingling hands and feet.",
+      "fruitsVeg": [
+        "Bananas",
+        "Potatoes",
+        "Chickpeas",
+        "Spinach",
+        "Avocado"
+      ],
+      "other": "Chicken, fish and fortified cereals.",
+      "need": "1.3 mg a day",
+      "food": "1 cup of cooked chickpeas (chanay) gives about 1.1 mg of vitamin B6, almost a whole day's need.",
+      "source": "https://ods.od.nih.gov/factsheets/VitaminB6-Consumer/"
+    },
+    {
+      "key": "b3",
+      "name": "Niacin (B3)",
+      "icon": "flame",
+      "tag": "A B vitamin that helps your body turn food into energy.",
+      "does": "Niacin helps turn the food you eat into energy and keeps your skin, nerves and digestion healthy.",
+      "good": "High-dose niacin supplements often cause flushing: red, warm, itchy skin. They can also affect the liver.",
+      "fruitsVeg": [
+        "Potatoes",
+        "Peas",
+        "Mushrooms",
+        "Avocado"
+      ],
+      "other": "Chicken, fish, peanuts and whole wheat.",
+      "need": "Men 16 mg, women 14 mg a day",
+      "food": "85 g (3 oz) of cooked chicken breast gives about 10 mg of niacin, around two-thirds of your daily need.",
+      "source": "https://ods.od.nih.gov/factsheets/Niacin-Consumer/"
+    },
+    {
+      "key": "omega3",
+      "name": "Omega-3",
+      "icon": "fish",
+      "tag": "A healthy fat found in fish and nuts that is good for your heart and brain.",
+      "does": "Omega-3 fats are part of every cell in your body and support your heart, brain and eyes.",
+      "good": "Fish gives the omega-3 types (EPA and DHA) your body uses most. Plants give ALA, which your body converts only in small amounts.",
+      "fruitsVeg": [
+        "Brussels sprouts (small amounts)",
+        "Spinach (small amounts)"
+      ],
+      "other": "Fish such as salmon, walnuts, flaxseeds and chia seeds.",
+      "need": "Men 1.6 g, women 1.1 g a day (plant omega-3)",
+      "food": "A small handful of walnuts (28 g, about 7 walnuts) gives about 2.5 g of plant omega-3, more than a day's need.",
+      "source": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-Consumer/"
+    },
+    {
+      "key": "iodine",
+      "name": "Iodine",
+      "icon": "beaker",
+      "tag": "A mineral your thyroid gland needs to control your energy and growth.",
+      "does": "Iodine helps your thyroid gland make hormones that control your energy, growth and how your body uses food.",
+      "good": "Too little iodine can cause goitre (a swollen thyroid). Using iodized salt is the easiest way to get enough.",
+      "fruitsVeg": [
+        "Seaweed",
+        "Prunes (small amounts)",
+        "Potatoes (small amounts)"
+      ],
+      "other": "Iodized salt, fish, milk, yogurt and eggs.",
+      "need": "150 mcg a day (220 mcg in pregnancy)",
+      "food": "Just a quarter teaspoon of iodized salt gives about 76 mcg of iodine, half your daily need.",
+      "source": "https://ods.od.nih.gov/factsheets/Iodine-Consumer/"
+    },
+    {
+      "key": "selenium",
+      "name": "Selenium",
+      "icon": "flower",
+      "tag": "A mineral that protects your cells and helps your thyroid work.",
+      "does": "Selenium protects your cells from damage, supports your immune system and helps your thyroid work.",
+      "good": "Too much selenium can cause hair and nail loss. A single Brazil nut can hold more than a whole day's amount.",
+      "fruitsVeg": [
+        "Mushrooms",
+        "Spinach (small amounts)"
+      ],
+      "other": "Fish, eggs, chicken and whole wheat.",
+      "need": "55 mcg a day",
+      "food": "One egg gives about 15 mcg of selenium, over a quarter of your daily need.",
+      "source": "https://ods.od.nih.gov/factsheets/Selenium-Consumer/"
+    }
+  ]
+}
