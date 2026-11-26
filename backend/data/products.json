@@ -1,0 +1,1143 @@
+{
+  "_about": "Products MediSafe recognises by name: the kind of product (group), the nutrients it contains and, for brands, the companies that own them. No strengths are kept here: amounts come only from the pack's own label or from the NIH Dietary Supplement Label Database. aliases: words on a label that mean this product (for example 'ferrous sulphate' = an iron supplement). Brand owners are as listed on each company's own website. generic_for: the general product an unknown brand is treated as when this nutrient is its main ingredient.",
+  "products": [
+    {
+      "name": "Iron Supplement",
+      "aliases": [
+        "ferrous sulphate",
+        "ferrous gluconate",
+        "ferrous",
+        "iron"
+      ],
+      "group": "iron",
+      "nutrients": [
+        "iron"
+      ],
+      "brands": {
+        "Iberet": {
+          "aliases": [
+            "iberet"
+          ],
+          "makers": [
+            "Abbott"
+          ]
+        },
+        "Dexorange": {
+          "aliases": [
+            "dexorange"
+          ]
+        },
+        "Bioferon": {
+          "aliases": [
+            "bioferon"
+          ]
+        }
+      },
+      "generic_for": "iron"
+    },
+    {
+      "name": "Calcium Supplement",
+      "aliases": [
+        "calcium carbonate",
+        "calcium citrate",
+        "calcium"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "calcium"
+      ],
+      "brands": {
+        "Orocal D3": {
+          "aliases": [
+            "orocal"
+          ]
+        },
+        "Caltrate": {
+          "aliases": [
+            "caltrate"
+          ],
+          "makers": [
+            "Haleon",
+            "Pfizer",
+            "GlaxoSmithKline"
+          ]
+        },
+        "Calcivon": {
+          "aliases": [
+            "calcivon"
+          ]
+        },
+        "Natecal D3": {
+          "aliases": [
+            "natecal"
+          ]
+        }
+      },
+      "generic_for": "calcium"
+    },
+    {
+      "name": "Vitamin C",
+      "aliases": [
+        "vitamin c",
+        "ascorbic"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_c"
+      ],
+      "brands": {
+        "Celin": {
+          "aliases": [
+            "celin"
+          ],
+          "makers": [
+            "GlaxoSmithKline",
+            "Haleon"
+          ]
+        },
+        "Limcee": {
+          "aliases": [
+            "limcee"
+          ]
+        }
+      },
+      "generic_for": "vitamin_c"
+    },
+    {
+      "name": "Vitamin D3",
+      "aliases": [
+        "vitamin d3",
+        "cholecalciferol",
+        "vitamin d"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_d"
+      ],
+      "generic_for": "vitamin_d"
+    },
+    {
+      "name": "Vitamin K2",
+      "aliases": [
+        "vitamin k2",
+        "menaquinone",
+        "vitamin k"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_k"
+      ],
+      "generic_for": "vitamin_k"
+    },
+    {
+      "name": "Vitamin B12",
+      "aliases": [
+        "vitamin b12",
+        "cyanocobalamin",
+        "methylcobalamin"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_b12"
+      ],
+      "generic_for": "vitamin_b12"
+    },
+    {
+      "name": "Folic Acid",
+      "aliases": [
+        "folic acid",
+        "folate"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "folate"
+      ],
+      "generic_for": "folate"
+    },
+    {
+      "name": "Zinc Supplement",
+      "aliases": [
+        "zinc sulphate",
+        "zinc"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "zinc"
+      ],
+      "brands": {
+        "Zincmed": {
+          "aliases": [
+            "zincmed"
+          ]
+        }
+      },
+      "generic_for": "zinc"
+    },
+    {
+      "name": "Magnesium",
+      "aliases": [
+        "magnesium"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "magnesium"
+      ],
+      "generic_for": "magnesium"
+    },
+    {
+      "name": "Omega-3 Fish Oil",
+      "aliases": [
+        "cod liver",
+        "fish oil",
+        "omega-3",
+        "omega 3"
+      ],
+      "group": "general",
+      "nutrients": [],
+      "brands": {
+        "Seven Seas": {
+          "aliases": [
+            "seven seas"
+          ],
+          "makers": [
+            "P&G Health (Procter & Gamble)",
+            "Merck",
+            "Seven Seas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Multivitamin",
+      "aliases": [
+        "multivitamin",
+        "multi vitamin"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_a",
+        "vitamin_c",
+        "vitamin_d",
+        "vitamin_e",
+        "vitamin_b6",
+        "vitamin_b12",
+        "folate",
+        "iron",
+        "zinc",
+        "calcium",
+        "magnesium"
+      ],
+      "brands": {
+        "Fulfil": {
+          "aliases": [
+            "fulfil"
+          ]
+        },
+        "Fortbit": {
+          "aliases": [
+            "fortbit"
+          ]
+        },
+        "Supradyn": {
+          "aliases": [
+            "supradyn"
+          ],
+          "makers": [
+            "Bayer"
+          ]
+        },
+        "One A Day": {
+          "aliases": [
+            "one a day"
+          ],
+          "makers": [
+            "Bayer"
+          ]
+        },
+        "Berocca": {
+          "aliases": [
+            "berocca"
+          ],
+          "makers": [
+            "Bayer"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Multivitamin (Centrum)",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_a",
+        "vitamin_c",
+        "vitamin_d",
+        "vitamin_e",
+        "vitamin_b6",
+        "vitamin_b12",
+        "folate",
+        "iron",
+        "zinc",
+        "calcium",
+        "magnesium"
+      ],
+      "brands": {
+        "Centrum": {
+          "aliases": [
+            "centrum"
+          ],
+          "makers": [
+            "Haleon",
+            "Pfizer",
+            "GlaxoSmithKline"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fefol Vit",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate",
+        "vitamin_b12"
+      ],
+      "brands": {
+        "Fefol Vit": {
+          "aliases": [
+            "fefol vit"
+          ],
+          "makers": [
+            "GlaxoSmithKline",
+            "Haleon"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fefol",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate"
+      ],
+      "brands": {
+        "Fefol": {
+          "aliases": [
+            "fefol"
+          ],
+          "makers": [
+            "GlaxoSmithKline",
+            "Haleon"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Surbex Z",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_c",
+        "zinc",
+        "vitamin_b1",
+        "niacin",
+        "vitamin_b6",
+        "vitamin_b12"
+      ],
+      "brands": {
+        "Surbex Z": {
+          "aliases": [
+            "surbex z"
+          ],
+          "makers": [
+            "Abbott"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Surbex T",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_b1",
+        "niacin",
+        "vitamin_b6",
+        "vitamin_b12",
+        "vitamin_c"
+      ],
+      "brands": {
+        "Surbex T": {
+          "aliases": [
+            "surbex t"
+          ],
+          "makers": [
+            "Abbott"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Surbex",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_b1",
+        "niacin",
+        "vitamin_b6",
+        "vitamin_b12",
+        "vitamin_c",
+        "vitamin_e",
+        "zinc"
+      ],
+      "brands": {
+        "Surbex": {
+          "aliases": [
+            "surbex"
+          ],
+          "makers": [
+            "Abbott"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sangobion",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate",
+        "vitamin_b12",
+        "vitamin_c"
+      ],
+      "brands": {
+        "Sangobion": {
+          "aliases": [
+            "sangobion"
+          ],
+          "makers": [
+            "P&G Health (Procter & Gamble)",
+            "Merck",
+            "Martin Dow"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Evion",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_e"
+      ],
+      "brands": {
+        "Evion": {
+          "aliases": [
+            "evion"
+          ],
+          "makers": [
+            "P&G Health (Procter & Gamble)",
+            "Merck",
+            "Martin Dow"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Redoxon",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_c"
+      ],
+      "brands": {
+        "Redoxon": {
+          "aliases": [
+            "redoxon"
+          ],
+          "makers": [
+            "Bayer"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Livogen",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate"
+      ],
+      "brands": {
+        "Livogen": {
+          "aliases": [
+            "livogen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pregnacare",
+      "aliases": [],
+      "group": "prenatal",
+      "nutrients": [
+        "folate",
+        "iron",
+        "vitamin_d",
+        "vitamin_b12",
+        "zinc"
+      ],
+      "brands": {
+        "Pregnacare": {
+          "aliases": [
+            "pregnacare"
+          ],
+          "makers": [
+            "Vitabiotics"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Elevit",
+      "aliases": [],
+      "group": "prenatal",
+      "nutrients": [
+        "folate",
+        "iron",
+        "vitamin_d",
+        "vitamin_b12",
+        "zinc",
+        "calcium"
+      ],
+      "brands": {
+        "Elevit": {
+          "aliases": [
+            "elevit"
+          ],
+          "makers": [
+            "Bayer"
+          ]
+        }
+      }
+    },
+    {
+      "name": "D Forte",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_d"
+      ],
+      "note": "High-dose vitamin D. Take only the dose and schedule your doctor prescribed.",
+      "brands": {
+        "D Forte": {
+          "aliases": [
+            "d forte"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fortefer",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate"
+      ],
+      "brands": {
+        "Fortefer": {
+          "aliases": [
+            "fortefer"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Materna",
+      "aliases": [],
+      "group": "prenatal",
+      "nutrients": [
+        "folate",
+        "iron",
+        "vitamin_d",
+        "vitamin_b12",
+        "zinc",
+        "calcium"
+      ],
+      "brands": {
+        "Materna": {
+          "aliases": [
+            "materna"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Surbex M",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_b1",
+        "niacin",
+        "vitamin_b6",
+        "vitamin_b12",
+        "vitamin_c",
+        "zinc",
+        "iron"
+      ],
+      "brands": {
+        "Surbex M": {
+          "aliases": [
+            "surbex m"
+          ],
+          "makers": [
+            "Abbott"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Nutrivit",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_a",
+        "vitamin_c",
+        "vitamin_d",
+        "vitamin_e",
+        "vitamin_b6",
+        "vitamin_b12",
+        "zinc"
+      ]
+    },
+    {
+      "name": "Zevit",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "zinc",
+        "vitamin_c",
+        "vitamin_b1",
+        "vitamin_b6",
+        "vitamin_b12"
+      ],
+      "brands": {
+        "Zevit": {
+          "aliases": [
+            "zevit"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Becozinc",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "zinc",
+        "vitamin_b1",
+        "vitamin_b6",
+        "vitamin_b12"
+      ],
+      "brands": {
+        "Becozinc": {
+          "aliases": [
+            "becozinc"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ironvit",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron"
+      ],
+      "brands": {
+        "Ironvit": {
+          "aliases": [
+            "ironvit"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ferrograd",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "vitamin_c"
+      ],
+      "brands": {
+        "Ferrograd": {
+          "aliases": [
+            "ferrograd"
+          ],
+          "makers": [
+            "Abbott"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Haematinic",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate",
+        "vitamin_b12"
+      ]
+    },
+    {
+      "name": "Vitamin E",
+      "aliases": [
+        "vitamin e",
+        "tocopherol"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_e"
+      ],
+      "generic_for": "vitamin_e"
+    },
+    {
+      "name": "Potassium",
+      "aliases": [
+        "potassium"
+      ],
+      "group": "general",
+      "nutrients": [
+        "potassium"
+      ],
+      "note": "Potassium supplements can be dangerous with kidney disease. Ask a doctor before taking them.",
+      "generic_for": "potassium"
+    },
+    {
+      "name": "Prenatal Vitamin",
+      "aliases": [
+        "prenatal",
+        "antenatal"
+      ],
+      "group": "prenatal",
+      "nutrients": [
+        "folate",
+        "iron",
+        "vitamin_d",
+        "vitamin_b12",
+        "zinc",
+        "calcium"
+      ],
+      "brands": {
+        "Blackmores": {
+          "aliases": [
+            "blackmores"
+          ],
+          "makers": [
+            "Blackmores"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Vitamin A",
+      "aliases": [
+        "vitamin a",
+        "retinol",
+        "beta carotene"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_a"
+      ],
+      "pregnant": {
+        "status": "ask_doctor",
+        "text": "Too much vitamin A (retinol) in pregnancy can harm the baby. Don't go above 3,000 mcg a day, and ask your doctor first."
+      },
+      "generic_for": "vitamin_a"
+    },
+    {
+      "name": "Biotin",
+      "aliases": [
+        "biotin"
+      ],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "biotin"
+      ],
+      "note": "Biotin can make some blood test results wrong. Tell the lab you take it.",
+      "generic_for": "biotin"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "aliases": [
+        "coenzyme q10",
+        "coq10",
+        "ubiquinol"
+      ],
+      "group": "general",
+      "nutrients": []
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "aliases": [
+        "turmeric",
+        "curcumin",
+        "haldi"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Ashwagandha",
+      "aliases": [
+        "ashwagandha",
+        "asgandh",
+        "withania"
+      ],
+      "group": "herbal",
+      "nutrients": [],
+      "note": "Rare cases of liver injury have been linked to ashwagandha. Don't use it if you have a thyroid or autoimmune condition (NIH NCCIH).",
+      "pregnant": {
+        "status": "avoid",
+        "text": "Ashwagandha should be avoided during pregnancy (NIH NCCIH)."
+      },
+      "breastfeeding": {
+        "status": "avoid",
+        "text": "Ashwagandha is not advised while breastfeeding (NIH NCCIH)."
+      }
+    },
+    {
+      "name": "Melatonin",
+      "aliases": [
+        "melatonin"
+      ],
+      "group": "hormone",
+      "nutrients": []
+    },
+    {
+      "name": "Hamdard Safi",
+      "aliases": [],
+      "group": "herbal",
+      "nutrients": [],
+      "brands": {
+        "Hamdard Safi": {
+          "aliases": [
+            "hamdard safi",
+            "safi"
+          ],
+          "makers": [
+            "Hamdard Laboratories (Waqf) Pakistan"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Neurobion",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_b1",
+        "vitamin_b6",
+        "vitamin_b12"
+      ],
+      "brands": {
+        "Neurobion": {
+          "aliases": [
+            "neurobion"
+          ],
+          "makers": [
+            "P&G Health (Procter & Gamble)",
+            "Merck",
+            "Martin Dow"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ferosoft / Ferose",
+      "aliases": [],
+      "group": "iron",
+      "nutrients": [
+        "iron",
+        "folate",
+        "vitamin_c"
+      ],
+      "brands": {
+        "Ferosoft": {
+          "aliases": [
+            "ferosoft"
+          ]
+        },
+        "Ferose": {
+          "aliases": [
+            "ferose"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Calcimax",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "calcium",
+        "vitamin_d",
+        "zinc",
+        "magnesium"
+      ],
+      "brands": {
+        "Calcimax": {
+          "aliases": [
+            "calcimax"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Calvit D3",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "calcium",
+        "vitamin_d"
+      ],
+      "brands": {
+        "Calvit D3": {
+          "aliases": [
+            "calvit"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Osteofos",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "calcium",
+        "magnesium",
+        "zinc",
+        "vitamin_d"
+      ],
+      "brands": {
+        "Osteofos": {
+          "aliases": [
+            "osteofos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Femibion",
+      "aliases": [],
+      "group": "prenatal",
+      "nutrients": [
+        "folate",
+        "vitamin_d",
+        "vitamin_b12",
+        "iron"
+      ],
+      "brands": {
+        "Femibion": {
+          "aliases": [
+            "femibion"
+          ],
+          "makers": [
+            "P&G Health (Procter & Gamble)",
+            "Merck"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Zinnat / Zincovit",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "zinc",
+        "vitamin_c"
+      ],
+      "brands": {
+        "Zincovit": {
+          "aliases": [
+            "zincovit"
+          ]
+        },
+        "Cervec": {
+          "aliases": [
+            "cervec"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Nigella Sativa (Kalonji)",
+      "aliases": [
+        "kalonji",
+        "nigella",
+        "habbatus"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Ispaghol (Psyllium Husk)",
+      "aliases": [
+        "ispaghol",
+        "psyllium"
+      ],
+      "group": "herbal",
+      "nutrients": [],
+      "note": "Drink a full glass of water with each dose."
+    },
+    {
+      "name": "Karela (Bitter Melon)",
+      "aliases": [
+        "karela",
+        "bitter melon"
+      ],
+      "group": "herbal",
+      "nutrients": [],
+      "note": "Karela can lower blood sugar."
+    },
+    {
+      "name": "Spirulina",
+      "aliases": [
+        "spirulina"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Garlic Extract",
+      "aliases": [
+        "garlic",
+        "lehsan",
+        "allicin"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Ginger Extract",
+      "aliases": [
+        "ginger",
+        "adrak",
+        "zingiber"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Moringa (Sohanjna)",
+      "aliases": [
+        "moringa",
+        "sohanjna"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Shilajit",
+      "aliases": [
+        "shilajit"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Senna (Seena)",
+      "aliases": [
+        "senna",
+        "seena"
+      ],
+      "group": "herbal",
+      "nutrients": [],
+      "note": "Senna is a laxative. Don't use it for more than 1 week unless a doctor says so."
+    },
+    {
+      "name": "Amla (Indian Gooseberry)",
+      "aliases": [
+        "amla",
+        "awla",
+        "emblica"
+      ],
+      "group": "herbal",
+      "nutrients": []
+    },
+    {
+      "name": "Vitamin D (Roletra)",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "vitamin_d"
+      ],
+      "brands": {
+        "Roletra": {
+          "aliases": [
+            "roletra"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Folic Acid 5mg",
+      "aliases": [],
+      "group": "vitamin_mineral",
+      "nutrients": [
+        "folate"
+      ],
+      "note": "5 mg is a prescription-strength dose, five times the normal safe daily limit. Take it only if a doctor prescribed it."
+    },
+    {
+      "name": "Karvol Plus",
+      "aliases": [],
+      "group": "not_supplement",
+      "nutrients": []
+    },
+    {
+      "name": "Neopeptine",
+      "aliases": [],
+      "group": "general",
+      "nutrients": [],
+      "brands": {
+        "Neopeptine": {
+          "aliases": [
+            "neopeptine"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maxitrol",
+      "aliases": [],
+      "group": "not_supplement",
+      "nutrients": []
+    },
+    {
+      "name": "Hamdard Arq Mako",
+      "aliases": [],
+      "group": "herbal",
+      "nutrients": [],
+      "brands": {
+        "Hamdard Arq Mako": {
+          "aliases": [
+            "arq mako"
+          ],
+          "makers": [
+            "Hamdard Laboratories (Waqf) Pakistan"
+          ]
+        }
+      }
+    }
+  ]
+}

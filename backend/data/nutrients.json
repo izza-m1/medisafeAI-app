@@ -1,0 +1,1152 @@
+{
+ "_about": "Daily need (RDA, or AI where no RDA exists) and upper limit (UL) per day, from the Dietary Reference Intakes published in the NIH Office of Dietary Supplements fact sheets (one link per nutrient). need rows: [age_from, age_to, male, female, pregnant, breastfeeding]. upper_limit rows: [age_from, age_to, limit]. null = no value set. label_names: how a label may write the nutrient. per_iu: amount of the nutrient in one IU (NIH ODS conversion).",
+ "nutrients": {
+  "vitamin_a": {
+   "name": "Vitamin A",
+   "unit": "mcg",
+   "label_names": "vitamin\\s*a\\b|retinol|retinyl\\s*\\w+",
+   "need": [
+    [
+     1,
+     3,
+     300,
+     300,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     400,
+     400,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     600,
+     600,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     900,
+     700,
+     750,
+     1200
+    ],
+    [
+     19,
+     50,
+     900,
+     700,
+     770,
+     1300
+    ],
+    [
+     51,
+     120,
+     900,
+     700,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     600
+    ],
+    [
+     4,
+     8,
+     900
+    ],
+    [
+     9,
+     13,
+     1700
+    ],
+    [
+     14,
+     18,
+     2800
+    ],
+    [
+     19,
+     120,
+     3000
+    ]
+   ],
+   "upper_limit_applies_to": "preformed vitamin A (retinol) from supplements and food",
+   "per_iu": {
+    "unit": "mcg",
+    "factor": 0.3
+   },
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+  },
+  "vitamin_c": {
+   "name": "Vitamin C",
+   "unit": "mg",
+   "label_names": "vitamin\\s*c\\b|ascorbic\\s*acid|sodium\\s*ascorbate",
+   "need": [
+    [
+     1,
+     3,
+     15,
+     15,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     25,
+     25,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     45,
+     45,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     75,
+     65,
+     80,
+     115
+    ],
+    [
+     19,
+     50,
+     90,
+     75,
+     85,
+     120
+    ],
+    [
+     51,
+     120,
+     90,
+     75,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     400
+    ],
+    [
+     4,
+     8,
+     650
+    ],
+    [
+     9,
+     13,
+     1200
+    ],
+    [
+     14,
+     18,
+     1800
+    ],
+    [
+     19,
+     120,
+     2000
+    ]
+   ],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+  },
+  "vitamin_d": {
+   "name": "Vitamin D",
+   "unit": "IU",
+   "label_names": "vitamin\\s*d\\s*3?\\b|cholecalciferol",
+   "need": [
+    [
+     1,
+     50,
+     600,
+     600,
+     600,
+     600
+    ],
+    [
+     51,
+     70,
+     600,
+     600,
+     null,
+     null
+    ],
+    [
+     71,
+     120,
+     800,
+     800,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     2500
+    ],
+    [
+     4,
+     8,
+     3000
+    ],
+    [
+     9,
+     120,
+     4000
+    ]
+   ],
+   "per_iu": {
+    "unit": "iu",
+    "factor": 1
+   },
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+  },
+  "vitamin_e": {
+   "name": "Vitamin E",
+   "unit": "mg",
+   "label_names": "vitamin\\s*e\\b|(?:dl?-?\\s*alpha\\s*)?tocopher\\w*",
+   "need": [
+    [
+     1,
+     3,
+     6,
+     6,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     7,
+     7,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     11,
+     11,
+     null,
+     null
+    ],
+    [
+     14,
+     50,
+     15,
+     15,
+     15,
+     19
+    ],
+    [
+     51,
+     120,
+     15,
+     15,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     200
+    ],
+    [
+     4,
+     8,
+     300
+    ],
+    [
+     9,
+     13,
+     600
+    ],
+    [
+     14,
+     18,
+     800
+    ],
+    [
+     19,
+     120,
+     1000
+    ]
+   ],
+   "upper_limit_applies_to": "vitamin E from supplements",
+   "per_iu": {
+    "unit": "mg",
+    "factor": 0.67
+   },
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"
+  },
+  "vitamin_k": {
+   "name": "Vitamin K",
+   "unit": "mcg",
+   "label_names": "vitamin\\s*k\\s*[12]?\\b|menaquinone|phytomenadione",
+   "need": [
+    [
+     1,
+     3,
+     30,
+     30,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     55,
+     55,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     60,
+     60,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     75,
+     75,
+     75,
+     75
+    ],
+    [
+     19,
+     50,
+     120,
+     90,
+     90,
+     90
+    ],
+    [
+     51,
+     120,
+     120,
+     90,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+  },
+  "vitamin_b1": {
+   "name": "Vitamin B1 (Thiamine)",
+   "unit": "mg",
+   "label_names": "vitamin\\s*b\\s*1\\b|thiamine?\\b(?:\\s*(?:mononitrate|hydrochloride|hcl))?",
+   "need": [
+    [
+     1,
+     3,
+     0.5,
+     0.5,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     0.6,
+     0.6,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     0.9,
+     0.9,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     1.2,
+     1.0,
+     1.4,
+     1.4
+    ],
+    [
+     19,
+     50,
+     1.2,
+     1.1,
+     1.4,
+     1.4
+    ],
+    [
+     51,
+     120,
+     1.2,
+     1.1,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+  },
+  "niacin": {
+   "name": "Vitamin B3 (Niacin)",
+   "unit": "mg",
+   "label_names": "vitamin\\s*b\\s*3\\b|niacin(?:amide)?|nicotinamide",
+   "need": [
+    [
+     1,
+     3,
+     6,
+     6,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     8,
+     8,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     12,
+     12,
+     null,
+     null
+    ],
+    [
+     14,
+     50,
+     16,
+     14,
+     18,
+     17
+    ],
+    [
+     51,
+     120,
+     16,
+     14,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     10
+    ],
+    [
+     4,
+     8,
+     15
+    ],
+    [
+     9,
+     13,
+     20
+    ],
+    [
+     14,
+     18,
+     30
+    ],
+    [
+     19,
+     120,
+     35
+    ]
+   ],
+   "upper_limit_applies_to": "niacin from supplements",
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/"
+  },
+  "vitamin_b6": {
+   "name": "Vitamin B6 (Pyridoxine)",
+   "unit": "mg",
+   "label_names": "vitamin\\s*b\\s*6\\b|pyridoxine(?:\\s*(?:hydrochloride|hcl))?",
+   "need": [
+    [
+     1,
+     3,
+     0.5,
+     0.5,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     0.6,
+     0.6,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     1.0,
+     1.0,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     1.3,
+     1.2,
+     1.9,
+     2.0
+    ],
+    [
+     19,
+     50,
+     1.3,
+     1.3,
+     1.9,
+     2.0
+    ],
+    [
+     51,
+     120,
+     1.7,
+     1.5,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     30
+    ],
+    [
+     4,
+     8,
+     40
+    ],
+    [
+     9,
+     13,
+     60
+    ],
+    [
+     14,
+     18,
+     80
+    ],
+    [
+     19,
+     120,
+     100
+    ]
+   ],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/"
+  },
+  "folate": {
+   "name": "Folic acid",
+   "unit": "mcg",
+   "label_names": "folic\\s*acid|l?-?\\s*methylfolate|folate|vitamin\\s*b\\s*9\\b",
+   "need": [
+    [
+     1,
+     3,
+     150,
+     150,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     200,
+     200,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     300,
+     300,
+     null,
+     null
+    ],
+    [
+     14,
+     50,
+     400,
+     400,
+     600,
+     500
+    ],
+    [
+     51,
+     120,
+     400,
+     400,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     300
+    ],
+    [
+     4,
+     8,
+     400
+    ],
+    [
+     9,
+     13,
+     600
+    ],
+    [
+     14,
+     18,
+     800
+    ],
+    [
+     19,
+     120,
+     1000
+    ]
+   ],
+   "upper_limit_applies_to": "folic acid from supplements",
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
+  },
+  "vitamin_b12": {
+   "name": "Vitamin B12",
+   "unit": "mcg",
+   "label_names": "vitamin\\s*b\\s*12\\b|cyanocobalamin|methylcobalamin|hydroxocobalamin",
+   "need": [
+    [
+     1,
+     3,
+     0.9,
+     0.9,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     1.2,
+     1.2,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     1.8,
+     1.8,
+     null,
+     null
+    ],
+    [
+     14,
+     50,
+     2.4,
+     2.4,
+     2.6,
+     2.8
+    ],
+    [
+     51,
+     120,
+     2.4,
+     2.4,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+  },
+  "biotin": {
+   "name": "Biotin",
+   "unit": "mcg",
+   "label_names": "biotin|vitamin\\s*b\\s*7\\b",
+   "need": [
+    [
+     1,
+     3,
+     8,
+     8,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     12,
+     12,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     20,
+     20,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     25,
+     25,
+     30,
+     35
+    ],
+    [
+     19,
+     50,
+     30,
+     30,
+     30,
+     35
+    ],
+    [
+     51,
+     120,
+     30,
+     30,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+  },
+  "iron": {
+   "name": "Iron",
+   "unit": "mg",
+   "label_names": "elemental\\s*iron|\\biron\\b|ferrous\\s*\\w+|ferric\\s*\\w+",
+   "need": [
+    [
+     1,
+     3,
+     7,
+     7,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     10,
+     10,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     8,
+     8,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     11,
+     15,
+     27,
+     10
+    ],
+    [
+     19,
+     50,
+     8,
+     18,
+     27,
+     9
+    ],
+    [
+     51,
+     120,
+     8,
+     8,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     13,
+     40
+    ],
+    [
+     14,
+     120,
+     45
+    ]
+   ],
+   "need_without_periods": [
+    [
+     14,
+     18,
+     11
+    ],
+    [
+     19,
+     50,
+     8
+    ]
+   ],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+  },
+  "zinc": {
+   "name": "Zinc",
+   "unit": "mg",
+   "label_names": "elemental\\s*zinc|\\bzinc\\b",
+   "need": [
+    [
+     1,
+     3,
+     3,
+     3,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     5,
+     5,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     8,
+     8,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     11,
+     9,
+     12,
+     13
+    ],
+    [
+     19,
+     50,
+     11,
+     8,
+     11,
+     12
+    ],
+    [
+     51,
+     120,
+     11,
+     8,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     7
+    ],
+    [
+     4,
+     8,
+     12
+    ],
+    [
+     9,
+     13,
+     23
+    ],
+    [
+     14,
+     18,
+     34
+    ],
+    [
+     19,
+     120,
+     40
+    ]
+   ],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+  },
+  "calcium": {
+   "name": "Calcium",
+   "unit": "mg",
+   "label_names": "elemental\\s*calcium|\\bcalcium\\b",
+   "need": [
+    [
+     1,
+     3,
+     700,
+     700,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     1000,
+     1000,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     1300,
+     1300,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     1300,
+     1300,
+     1300,
+     1300
+    ],
+    [
+     19,
+     50,
+     1000,
+     1000,
+     1000,
+     1000
+    ],
+    [
+     51,
+     70,
+     1000,
+     1200,
+     null,
+     null
+    ],
+    [
+     71,
+     120,
+     1200,
+     1200,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     8,
+     2500
+    ],
+    [
+     9,
+     18,
+     3000
+    ],
+    [
+     19,
+     50,
+     2500
+    ],
+    [
+     51,
+     120,
+     2000
+    ]
+   ],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+  },
+  "magnesium": {
+   "name": "Magnesium",
+   "unit": "mg",
+   "label_names": "elemental\\s*magnesium|\\bmagnesium\\b",
+   "need": [
+    [
+     1,
+     3,
+     80,
+     80,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     130,
+     130,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     240,
+     240,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     410,
+     360,
+     400,
+     360
+    ],
+    [
+     19,
+     30,
+     400,
+     310,
+     350,
+     310
+    ],
+    [
+     31,
+     50,
+     420,
+     320,
+     360,
+     320
+    ],
+    [
+     51,
+     120,
+     420,
+     320,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [
+    [
+     1,
+     3,
+     65
+    ],
+    [
+     4,
+     8,
+     110
+    ],
+    [
+     9,
+     120,
+     350
+    ]
+   ],
+   "upper_limit_applies_to": "magnesium from supplements (not food)",
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+  },
+  "potassium": {
+   "name": "Potassium",
+   "unit": "mg",
+   "label_names": "\\bpotassium\\b",
+   "need": [
+    [
+     1,
+     3,
+     2000,
+     2000,
+     null,
+     null
+    ],
+    [
+     4,
+     8,
+     2300,
+     2300,
+     null,
+     null
+    ],
+    [
+     9,
+     13,
+     2500,
+     2300,
+     null,
+     null
+    ],
+    [
+     14,
+     18,
+     3000,
+     2300,
+     2600,
+     2500
+    ],
+    [
+     19,
+     50,
+     3400,
+     2600,
+     2900,
+     2800
+    ],
+    [
+     51,
+     120,
+     3400,
+     2600,
+     null,
+     null
+    ]
+   ],
+   "upper_limit": [],
+   "fact_sheet": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"
+  }
+ }
+}

@@ -1,0 +1,58 @@
+{
+  "_about": "Words that show a pack is a medicine, not a supplement: common generic names from the WHO Model List of Essential Medicines, and INN name stems (drug-family endings) from the WHO INN programme.",
+  "sources": [
+    "https://www.who.int/groups/expert-committee-on-selection-and-use-of-essential-medicines/essential-medicines-lists",
+    "https://www.who.int/teams/health-product-and-policy-standards/inn"
+  ],
+  "generic_names": [
+    "paracetamol",
+    "acetaminophen",
+    "ibuprofen",
+    "diclofenac",
+    "naproxen",
+    "mefenamic",
+    "aspirin",
+    "tramadol",
+    "codeine",
+    "cetirizine",
+    "loratadine",
+    "fexofenadine",
+    "chlorpheniramine",
+    "metformin",
+    "glimepiride",
+    "gliclazide",
+    "insulin",
+    "amlodipine",
+    "losartan",
+    "atenolol",
+    "bisoprolol",
+    "warfarin",
+    "clopidogrel",
+    "levothyroxine",
+    "prednisolone",
+    "dexamethasone",
+    "loperamide",
+    "domperidone",
+    "ondansetron",
+    "metronidazole",
+    "ranitidine",
+    "famotidine",
+    "salbutamol",
+    "montelukast"
+  ],
+  "stems": [
+    "cillin",
+    "mycin",
+    "floxacin",
+    "prazole",
+    "statin",
+    "sartan",
+    "pril",
+    "olol",
+    "dipine",
+    "cycline"
+  ],
+  "not_medicines": [
+    "april"
+  ]
+}

@@ -1,0 +1,599 @@
+{
+ "_about": "Every food, drink and supplement interaction the NIH Office of Dietary Supplements fact sheets state for the supplements in this app. Each entry quotes the exact NIH sentences it is based on (tests/test_11_food_interactions.py checks that each quote appears word for word in the saved page in data/knowledge/pages). 'advice' is the same fact in plain words. 'groups' link the entry to everyday foods in foods.json. 'min_amount' means the entry only applies at that dose or more. For how_to_take entries, 'effect' is the timing it supports: with_food, with_food_if_upset, either or split_dose. 'in_product_advice' replaces 'advice' when the product itself contains both supplements of a pair.",
+ "interactions": [
+  {
+   "id": "iron-phytate",
+   "supplements": [
+    "iron"
+   ],
+   "kind": "food",
+   "effect": "lowers",
+   "groups": [
+    "grains",
+    "beans",
+    "cereals",
+    "legumes"
+   ],
+   "advice": "Grains, beans, cereals and legumes can lower how much iron your body absorbs.",
+   "quotes": [
+    {
+     "text": "In addition to ascorbic acid, meat, poultry, and seafood can enhance nonheme iron absorption, whereas phytate (which is present in grains and beans) and certain polyphenols in some nonanimal foods (e.g., cereals, legumes) have the opposite effect.",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+     "section": "Sources of Iron - Food"
+    }
+   ]
+  },
+  {
+   "id": "iron-meat",
+   "supplements": [
+    "iron"
+   ],
+   "kind": "food",
+   "effect": "raises",
+   "groups": [
+    "meat",
+    "poultry",
+    "seafood"
+   ],
+   "advice": "Meat, chicken and fish help your body absorb more iron.",
+   "quotes": [
+    {
+     "text": "In addition to ascorbic acid, meat, poultry, and seafood can enhance nonheme iron absorption, whereas phytate (which is present in grains and beans) and certain polyphenols in some nonanimal foods (e.g., cereals, legumes) have the opposite effect.",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+     "section": "Sources of Iron - Food"
+    }
+   ]
+  },
+  {
+   "id": "iron-vitamin-c-foods",
+   "supplements": [
+    "iron"
+   ],
+   "kind": "food",
+   "effect": "raises",
+   "groups": [
+    "vitamin_c_foods"
+   ],
+   "advice": "Foods rich in vitamin C, like citrus fruits, peppers and tomatoes, help your body absorb iron.",
+   "quotes": [
+    {
+     "text": "The bioavailability of iron is approximately 14% to 18% from mixed diets that include substantial amounts of meat, seafood, and vitamin C (ascorbic acid, which enhances the bioavailability of nonheme iron) and 5% to 12% from vegetarian diets.",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+     "section": "Sources of Iron - Food"
+    },
+    {
+     "text": "The best sources of vitamin C are fruits and vegetables, especially citrus fruits, red and green peppers, kiwifruit, broccoli, strawberries, and Brussels sprouts.",
+     "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+     "section": "Sources of Vitamin C - Food"
+    }
+   ]
+  },
+  {
+   "id": "iron-calcium-foods",
+   "supplements": [
+    "iron"
+   ],
+   "kind": "food",
+   "effect": "lowers",
+   "groups": [
+    "dairy"
+   ],
+   "advice": "Calcium, which milk, yogurt and cheese are rich in, might lower how much iron you absorb.",
+   "quotes": [
+    {
+     "text": "Unlike other inhibitors of iron absorption, calcium might reduce the bioavailability of both nonheme and heme iron.",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+     "section": "Sources of Iron - Food"
+    },
+    {
+     "text": "Milk, yogurt, and cheese are rich natural sources of calcium.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Sources of Calcium - Food"
+    }
+   ]
+  },
+  {
+   "id": "iron-with-food",
+   "supplements": [
+    "iron"
+   ],
+   "kind": "how_to_take",
+   "effect": "with_food_if_upset",
+   "groups": [],
+   "advice": "If iron upsets your stomach, take it with food.",
+   "quotes": [
+    {
+     "text": "Taking iron supplements with food can help minimize these adverse effects.",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+     "section": "Health Risks from Excessive Iron"
+    }
+   ]
+  },
+  {
+   "id": "zinc-phytate",
+   "supplements": [
+    "zinc"
+   ],
+   "kind": "food",
+   "effect": "lowers",
+   "groups": [
+    "beans",
+    "nuts",
+    "whole_grains",
+    "legumes"
+   ],
+   "advice": "Beans, nuts, whole grains and legumes contain phytates, which lower how much zinc you absorb.",
+   "quotes": [
+    {
+     "text": "Beans, nuts, and whole grains contain zinc, but the bioavailability of zinc from these foods is lower than that from animal foods because these foods contain phytates.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Sources of Zinc - Food"
+    },
+    {
+     "text": "The bioavailability of zinc from vegetarian diets is often lower than from nonvegetarian diets because people who follow vegetarian diets typically eat large amounts of legumes and whole grains, which contain phytates that bind zinc and inhibit its absorption.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Groups at Risk of Zinc Inadequacy - People who follow vegetarian or vegan diets"
+    }
+   ]
+  },
+  {
+   "id": "zinc-soaking",
+   "supplements": [
+    "zinc"
+   ],
+   "kind": "tip",
+   "effect": "raises",
+   "groups": [
+    "beans",
+    "whole_grains",
+    "seeds"
+   ],
+   "advice": "Soaking beans, grains and seeds in water for several hours before cooking helps you absorb more zinc from them.",
+   "quotes": [
+    {
+     "text": "People who follow vegetarian or vegan diets might benefit from using certain food preparation techniques that reduce the binding of zinc by phytates and increase its bioavailability, such as soaking beans, grains, and seeds in water for several hours before cooking them.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Groups at Risk of Zinc Inadequacy - People who follow vegetarian or vegan diets"
+    }
+   ]
+  },
+  {
+   "id": "zinc-fermented",
+   "supplements": [
+    "zinc"
+   ],
+   "kind": "food",
+   "effect": "raises",
+   "groups": [
+    "fermented"
+   ],
+   "advice": "Fermented foods, like yogurt, might help you absorb more zinc.",
+   "quotes": [
+    {
+     "text": "In addition, organic acids in fermented foods might increase zinc absorption.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Groups at Risk of Zinc Inadequacy - People who follow vegetarian or vegan diets"
+    }
+   ]
+  },
+  {
+   "id": "zinc-alcohol",
+   "supplements": [
+    "zinc"
+   ],
+   "kind": "drink",
+   "effect": "lowers",
+   "groups": [
+    "alcohol"
+   ],
+   "advice": "Alcohol lowers how much zinc you absorb and makes you lose more in urine.",
+   "quotes": [
+    {
+     "text": "Ethanol consumption decreases intestinal absorption of zinc and increases urinary zinc excretion.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Groups at Risk of Zinc Inadequacy - People with alcohol use disorder"
+    }
+   ]
+  },
+  {
+   "id": "calcium-oxalate",
+   "supplements": [
+    "calcium"
+   ],
+   "kind": "food",
+   "effect": "lowers",
+   "groups": [
+    "oxalate",
+    "beans"
+   ],
+   "advice": "Spinach, collard greens, sweet potatoes, rhubarb and beans contain oxalic acid, which lowers how much calcium you absorb.",
+   "quotes": [
+    {
+     "text": "Certain compounds in plants (e.g., oxalic acid, phytic acid) can decrease calcium absorption by forming indigestible salts with calcium.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Sources of Calcium - Food"
+    },
+    {
+     "text": "In addition to spinach, foods with high levels of oxalic acid include collard greens, sweet potatoes, rhubarb, and beans.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Sources of Calcium - Food"
+    }
+   ]
+  },
+  {
+   "id": "calcium-caffeine",
+   "supplements": [
+    "calcium"
+   ],
+   "kind": "drink",
+   "effect": "lowers",
+   "groups": [
+    "caffeine"
+   ],
+   "advice": "Caffeine, in tea and coffee, lowers calcium absorption a little.",
+   "quotes": [
+    {
+     "text": "Net absorption of dietary calcium is also reduced to a small extent by intakes of caffeine and phosphorus and to a greater extent by low status of vitamin D.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Sources of Calcium - Food"
+    }
+   ]
+  },
+  {
+   "id": "calcium-with-food",
+   "supplements": [
+    "calcium"
+   ],
+   "kind": "how_to_take",
+   "effect": "with_food",
+   "groups": [],
+   "advice": "Take calcium with food: you absorb more of it that way.",
+   "quotes": [
+    {
+     "text": "In general, however, absorption of calcium supplements is greater when they are taken with food, regardless of whether the user’s gastric acid is low.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Sources of Calcium - Dietary supplements"
+    }
+   ]
+  },
+  {
+   "id": "calcium-split-dose",
+   "supplements": [
+    "calcium"
+   ],
+   "kind": "how_to_take",
+   "effect": "split_dose",
+   "groups": [],
+   "advice": "The more calcium you take at one time, the smaller the share you absorb, so smaller doses spread through the day work better.",
+   "quotes": [
+    {
+     "text": "The percentage of calcium absorbed from supplements, as with that from foods, depends not only on the source of calcium but also on the total amount of elemental calcium consumed at one time; as the amount increases, the percentage absorbed decreases.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Sources of Calcium - Dietary supplements"
+    }
+   ]
+  },
+  {
+   "id": "vitamin-d-fat",
+   "supplements": [
+    "vitamin_d"
+   ],
+   "kind": "food",
+   "effect": "raises",
+   "groups": [
+    "fat"
+   ],
+   "advice": "Take vitamin D with a meal that has some fat in it: fat helps you absorb it.",
+   "quotes": [
+    {
+     "text": "The concurrent presence of fat in the gut enhances vitamin D absorption, but some vitamin D is absorbed even without dietary fat.",
+     "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+     "section": "Introduction"
+    }
+   ]
+  },
+  {
+   "id": "vitamin-e-fat",
+   "supplements": [
+    "vitamin_e"
+   ],
+   "kind": "food",
+   "effect": "raises",
+   "groups": [
+    "fat"
+   ],
+   "advice": "Your body needs fat to absorb vitamin E, so take it with a meal that has some fat.",
+   "quotes": [
+    {
+     "text": "Because the digestive tract requires fat to absorb vitamin E, people with fat-malabsorption disorders are more likely to become deficient than people without such disorders.",
+     "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/",
+     "section": "Groups at Risk of Vitamin E Inadequacy - People with fat-malabsorption disorders"
+    }
+   ]
+  },
+  {
+   "id": "folate-food",
+   "supplements": [
+    "folate"
+   ],
+   "kind": "how_to_take",
+   "effect": "either",
+   "groups": [],
+   "advice": "Folic acid works with or without food. You absorb a little more of it on an empty stomach.",
+   "quotes": [
+    {
+     "text": "About 85% of supplemental folic acid, when taken with food, is bioavailable.",
+     "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+     "section": "Sources of Folate - Dietary supplements"
+    },
+    {
+     "text": "When consumed without food, nearly 100% of supplemental folic acid is bioavailable.",
+     "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+     "section": "Sources of Folate - Dietary supplements"
+    }
+   ]
+  },
+  {
+   "id": "folate-alcohol",
+   "supplements": [
+    "folate"
+   ],
+   "kind": "drink",
+   "effect": "lowers",
+   "groups": [
+    "alcohol"
+   ],
+   "advice": "Alcohol lowers folate absorption and makes the body break it down faster.",
+   "quotes": [
+    {
+     "text": "Moreover, alcohol interferes with folate absorption and hepatic uptake, accelerates folate breakdown, and increases its renal excretion.",
+     "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+     "section": "Groups at Risk of Folate Inadequacy - People with alcohol use disorder"
+    }
+   ]
+  },
+  {
+   "id": "biotin-raw-egg",
+   "supplements": [
+    "biotin"
+   ],
+   "kind": "food",
+   "effect": "lowers",
+   "groups": [
+    "raw_egg_white"
+   ],
+   "advice": "Raw egg whites stop biotin from being absorbed. Cooked eggs are not part of this warning.",
+   "quotes": [
+    {
+     "text": "Dietary avidin, a glycoprotein in raw egg whites, binds tightly to dietary biotin and prevents biotin’s absorption in the gastrointestinal tract.",
+     "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/",
+     "section": "Sources of Biotin - Food"
+    }
+   ]
+  },
+  {
+   "id": "biotin-alcohol",
+   "supplements": [
+    "biotin"
+   ],
+   "kind": "drink",
+   "effect": "lowers",
+   "groups": [
+    "alcohol"
+   ],
+   "advice": "Drinking alcohol over a long time lowers biotin absorption.",
+   "quotes": [
+    {
+     "text": "Chronic exposure to alcohol inhibits the absorption of biotin.",
+     "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/",
+     "section": "Groups at Risk of Biotin Inadequacy - Individuals with chronic alcohol exposure"
+    }
+   ]
+  },
+  {
+   "id": "niacin-with-food",
+   "supplements": [
+    "niacin"
+   ],
+   "kind": "how_to_take",
+   "effect": "with_food",
+   "groups": [],
+   "advice": "Taking niacin with food can reduce the flushing (red, warm skin) it causes.",
+   "quotes": [
+    {
+     "text": "Supplement users can reduce the flushing effects by taking nicotinic acid supplements with food, slowly increasing the dose over time, or simply waiting for the body to develop a natural tolerance.",
+     "url": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/",
+     "section": "Health Risks from Excessive Niacin"
+    }
+   ]
+  },
+  {
+   "id": "thiamin-alcohol",
+   "supplements": [
+    "vitamin_b1"
+   ],
+   "kind": "drink",
+   "effect": "lowers",
+   "groups": [
+    "alcohol"
+   ],
+   "advice": "Heavy alcohol use lowers how much thiamin (vitamin B1) the body absorbs.",
+   "quotes": [
+    {
+     "text": "In addition to insufficient intakes of thiamin from the diet, the causes of thiamin deficiency include lower absorption or higher excretion rates than normal due, for example, to certain conditions (such as alcohol dependence or HIV/AIDS) or use of some medications.",
+     "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/",
+     "section": "Thiamin Deficiency"
+    }
+   ]
+  },
+  {
+   "id": "b6-alcohol",
+   "supplements": [
+    "vitamin_b6"
+   ],
+   "kind": "drink",
+   "effect": "lowers",
+   "groups": [
+    "alcohol"
+   ],
+   "advice": "Alcohol lowers the active form of vitamin B6 in the body.",
+   "quotes": [
+    {
+     "text": "Alcohol produces acetaldehyde, which decreases net PLP formation by cells and competes with PLP in protein binding.",
+     "url": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/",
+     "section": "Groups at Risk of Vitamin B6 Inadequacy - People with alcohol dependence"
+    }
+   ]
+  },
+  {
+   "id": "iron-calcium-apart",
+   "supplements": [
+    "iron",
+    "calcium"
+   ],
+   "kind": "supplement",
+   "effect": "take_apart",
+   "groups": [],
+   "advice": "Take iron and calcium at different times of the day.",
+   "quotes": [
+    {
+     "text": "In addition, experts recommend taking calcium and iron supplements at different times to avoid potential interference with the absorption of iron.",
+     "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+     "section": "Sources of Iron - Dietary supplements"
+    }
+   ],
+   "pair": [
+    "iron",
+    "calcium"
+   ],
+   "in_product_advice": "This product has both iron and calcium, and calcium might lower how much iron you absorb from it. If you also take a separate iron or calcium tablet, take it at a different time of day."
+  },
+  {
+   "id": "iron-zinc-apart",
+   "supplements": [
+    "iron",
+    "zinc"
+   ],
+   "kind": "supplement",
+   "effect": "take_apart",
+   "groups": [],
+   "advice": "Iron of 25 mg or more lowers zinc absorption, so take them at different times.",
+   "quotes": [
+    {
+     "text": "Taking supplements containing 25 mg elemental iron or more at the same time as zinc supplements can reduce zinc absorption and plasma zinc concentrations.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Sources of Zinc - Dietary supplements"
+    }
+   ],
+   "pair": [
+    "iron",
+    "zinc"
+   ],
+   "min_amount": {
+    "nutrient": "iron",
+    "amount": 25,
+    "unit": "mg"
+   },
+   "in_product_advice": "This product has both iron and zinc. Iron of 25 mg or more lowers zinc absorption, so if you also take a separate iron or zinc tablet, take it at a different time."
+  },
+  {
+   "id": "zinc-copper",
+   "supplements": [
+    "zinc"
+   ],
+   "kind": "supplement",
+   "effect": "lowers",
+   "groups": [],
+   "advice": "Zinc of 50 mg or more a day, for weeks, can lower your copper. Take doses this high only if a doctor advises.",
+   "quotes": [
+    {
+     "text": "If used for weeks, doses of 50 mg zinc or more—typically from supplements or excessive use of denture adhesive creams that contain zinc—can interfere with copper absorption (which can cause low copper status), reduce immune function, and lower HDL cholesterol levels.",
+     "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+     "section": "Health Risks from Excessive Zinc"
+    }
+   ],
+   "pair": [
+    "zinc",
+    "copper"
+   ],
+   "min_amount": {
+    "nutrient": "zinc",
+    "amount": 50,
+    "unit": "mg"
+   }
+  },
+  {
+   "id": "zinc-magnesium",
+   "supplements": [
+    "zinc",
+    "magnesium"
+   ],
+   "kind": "supplement",
+   "effect": "lowers",
+   "groups": [],
+   "advice": "Very high zinc doses (142 mg a day) can lower magnesium absorption.",
+   "quotes": [
+    {
+     "text": "One study found that very high doses of zinc from supplements (142 mg/day) can interfere with magnesium absorption and disrupt the magnesium balance in the body.",
+     "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+     "section": "Sources of Magnesium - Dietary supplements"
+    }
+   ],
+   "pair": [
+    "zinc",
+    "magnesium"
+   ],
+   "min_amount": {
+    "nutrient": "zinc",
+    "amount": 142,
+    "unit": "mg"
+   }
+  },
+  {
+   "id": "vitamin-c-iron",
+   "supplements": [
+    "vitamin_c",
+    "iron"
+   ],
+   "kind": "supplement",
+   "effect": "raises",
+   "groups": [],
+   "advice": "Vitamin C helps you absorb iron.",
+   "quotes": [
+    {
+     "text": "In addition to its biosynthetic and antioxidant functions, vitamin C plays an important role in immune function and improves the absorption of nonheme iron, the form of iron that is present in plant-based foods.",
+     "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+     "section": "Introduction"
+    }
+   ],
+   "pair": [
+    "vitamin_c",
+    "iron"
+   ],
+   "in_product_advice": "This product has vitamin C, which helps you absorb its iron."
+  },
+  {
+   "id": "vitamin-d-calcium",
+   "supplements": [
+    "vitamin_d",
+    "calcium"
+   ],
+   "kind": "supplement",
+   "effect": "raises",
+   "groups": [],
+   "advice": "Vitamin D helps your body absorb calcium.",
+   "quotes": [
+    {
+     "text": "Vitamin D is required for calcium to be absorbed in the gut by active transport and to maintain adequate calcium levels in the blood.",
+     "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+     "section": "Introduction"
+    }
+   ],
+   "pair": [
+    "vitamin_d",
+    "calcium"
+   ],
+   "in_product_advice": "This product has vitamin D, which helps your body absorb its calcium."
+  }
+ ]
+}

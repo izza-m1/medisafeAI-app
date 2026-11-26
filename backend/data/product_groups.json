@@ -1,0 +1,125 @@
+{
+  "_about": "Shared safety rules for each kind of product. status: ok | ask_doctor | avoid. Vitamin and mineral rules follow the NIH Office of Dietary Supplements fact sheets; herbal rules follow NIH NCCIH 'Herbs at a Glance'.",
+  "groups": {
+    "vitamin_mineral": {
+      "label": "Vitamin / mineral",
+      "child": {
+        "status": "ok",
+        "text": "Within the safe daily limit for your age."
+      },
+      "pregnant": {
+        "status": "ok",
+        "text": "Vitamins and minerals are fine in pregnancy within the safe daily limits. Tell your doctor you take it."
+      },
+      "breastfeeding": {
+        "status": "ok",
+        "text": "Fine while breastfeeding within the safe daily limits."
+      },
+      "source": "https://ods.od.nih.gov/factsheets/list-all/"
+    },
+    "iron": {
+      "label": "Iron",
+      "child": {
+        "status": "avoid",
+        "text": "Children only need an iron supplement if a doctor found low iron. Too much iron is a common cause of poisoning in young children."
+      },
+      "pregnant": {
+        "status": "ok",
+        "text": "Pregnancy raises your iron need to 27 mg a day, so iron is often advised. Follow your doctor's dose."
+      },
+      "breastfeeding": {
+        "status": "ok",
+        "text": "Iron need while breastfeeding is 9-10 mg a day, lower than before pregnancy."
+      },
+      "periods": {
+        "yes": "Girls and women who have periods need more iron (15 mg a day for ages 14-18, 18 mg for ages 19-50). Heavy periods raise the risk of low iron.",
+        "no": "Without periods your iron need is lower (8-11 mg a day), which food usually covers. Take an iron supplement only if a blood test showed low iron."
+      },
+      "male_adult": "Men need only 8 mg of iron a day, which food usually covers. Take an iron supplement only if a blood test showed low iron.",
+      "child_age": 12,
+      "source": "https://ods.od.nih.gov/factsheets/list-all/"
+    },
+    "prenatal": {
+      "label": "Prenatal",
+      "child": {
+        "status": "avoid",
+        "text": "This is a pregnancy supplement. It is not designed for children."
+      },
+      "male": {
+        "status": "avoid",
+        "text": "This is made for women who are planning a pregnancy, pregnant or breastfeeding. It is not designed for men."
+      },
+      "female_not_pregnant": {
+        "status": "ask_doctor",
+        "text": "Prenatal vitamins are made for women planning a pregnancy, pregnant or breastfeeding. If none of these apply, a normal multivitamin usually fits better."
+      },
+      "pregnant": {
+        "status": "ok",
+        "text": "Made for pregnancy. It gives the extra folic acid and iron you need."
+      },
+      "breastfeeding": {
+        "status": "ok",
+        "text": "Made for pregnancy and breastfeeding."
+      },
+      "source": "https://ods.od.nih.gov/factsheets/list-all/"
+    },
+    "herbal": {
+      "label": "Herbal",
+      "child": {
+        "status": "ask_doctor",
+        "text": "Safety of this herbal product in children under 18 has not been established. Ask a doctor first."
+      },
+      "pregnant": {
+        "status": "ask_doctor",
+        "text": "Safety in pregnancy has not been established. Ask your doctor before taking it."
+      },
+      "breastfeeding": {
+        "status": "ask_doctor",
+        "text": "Safety while breastfeeding has not been established. Ask your doctor before taking it."
+      },
+      "child_age": 18,
+      "source": "https://www.nccih.nih.gov/health/herbsataglance"
+    },
+    "hormone": {
+      "label": "Hormone",
+      "child": {
+        "status": "ask_doctor",
+        "text": "Melatonin is a hormone. For children's sleep problems, see a doctor before using it."
+      },
+      "pregnant": {
+        "status": "ask_doctor",
+        "text": "There is not enough research on melatonin in pregnancy. Ask your doctor first."
+      },
+      "breastfeeding": {
+        "status": "ask_doctor",
+        "text": "There is not enough research on melatonin while breastfeeding. Ask your doctor first."
+      },
+      "child_age": 18,
+      "source": "https://ods.od.nih.gov/factsheets/list-all/"
+    },
+    "general": {
+      "label": "Supplement",
+      "child": {
+        "status": "ok",
+        "text": "Follow the children's dose on the pack, if one is given."
+      },
+      "pregnant": {
+        "status": "ask_doctor",
+        "text": "Ask your doctor before taking this in pregnancy."
+      },
+      "breastfeeding": {
+        "status": "ask_doctor",
+        "text": "Ask your doctor before taking this while breastfeeding."
+      },
+      "source": "https://ods.od.nih.gov/factsheets/list-all/"
+    },
+    "not_supplement": {
+      "label": "Not a supplement",
+      "all": {
+        "status": "avoid",
+        "text": "This product is not a dietary supplement, so MediSafe cannot check it. Ask a pharmacist."
+      },
+      "source": "https://ods.od.nih.gov/factsheets/list-all/"
+    }
+  }
+}

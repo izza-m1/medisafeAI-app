@@ -1,0 +1,15 @@
+{
+  "_about": "What import_dsld.py searches for in the NIH Dietary Supplement Label Database, and which label words mean a herb.",
+  "per_term": 25,
+  "terms": ["vitamin d3", "vitamin c", "vitamin b12", "vitamin e", "vitamin a", "vitamin k2", "b complex", "biotin",
+            "folic acid", "iron", "calcium", "calcium vitamin d", "zinc", "magnesium", "potassium", "multivitamin",
+            "multivitamin women", "multivitamin men", "prenatal", "fish oil", "omega-3", "coq10", "melatonin",
+            "ashwagandha", "turmeric", "ginger", "garlic", "moringa", "spirulina", "psyllium",
+            "Centrum", "Nature Made", "Nature's Bounty", "GNC", "Solgar", "NOW Foods", "Seven Seas", "Blackmores"],
+  "herbs": {
+    "ashwagandha|withania": "Ashwagandha", "turmeric|curcumin": "Turmeric", "\\bginger\\b": "Ginger", "\\bgarlic\\b": "Garlic",
+    "moringa": "Moringa", "spirulina": "Spirulina", "melatonin": "Melatonin", "fish oil|omega-?3|\\bepa\\b|\\bdha\\b": "Omega-3",
+    "coenzyme q|coq10|ubiquinol": "Coenzyme Q10", "psyllium": "Psyllium", "senna": "Senna", "bitter melon": "Bitter melon",
+    "nigella|black seed": "Nigella sativa (kalonji)", "\\bamla\\b|emblica": "Amla", "shilajit": "Shilajit"
+  }
+}

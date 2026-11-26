@@ -1,0 +1,181 @@
+{
+  "_about": "Supplement and medicine interactions stated in the NIH Office of Dietary Supplements fact sheets. examples: names a pack may print. status: caution | stop.",
+  "medicines": [
+    {
+      "key": "levothyroxine",
+      "name": "Levothyroxine (thyroid medicine)",
+      "examples": [
+        "levothyroxine",
+        "synthroid",
+        "thyroxine"
+      ],
+      "interactions": [
+        {
+          "nutrient": "iron",
+          "status": "caution",
+          "text": "Iron lowers the absorption of levothyroxine. Take them at least 4 hours apart.",
+          "source": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+        },
+        {
+          "nutrient": "calcium",
+          "status": "caution",
+          "text": "Calcium carbonate lowers the absorption of levothyroxine. Take them at least 4 hours apart.",
+          "source": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "levodopa",
+      "name": "Levodopa (Parkinson's medicine)",
+      "examples": [
+        "levodopa",
+        "sinemet",
+        "stalevo"
+      ],
+      "interactions": [
+        {
+          "nutrient": "iron",
+          "status": "caution",
+          "text": "Iron lowers the amount of levodopa your body gets. Ask your doctor how to time them.",
+          "source": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "ppi",
+      "name": "Acid reducers (omeprazole, esomeprazole, lansoprazole)",
+      "examples": [
+        "omeprazole",
+        "esomeprazole",
+        "lansoprazole",
+        "pantoprazole"
+      ],
+      "interactions": [
+        {
+          "nutrient": "iron",
+          "status": "caution",
+          "text": "These medicines can lower iron absorption. If you take iron for low iron, tell your doctor so they can check it is working.",
+          "source": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "quinolone",
+      "name": "Quinolone antibiotics (ciprofloxacin, levofloxacin, moxifloxacin)",
+      "examples": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin"
+      ],
+      "interactions": [
+        {
+          "nutrient": "calcium",
+          "status": "caution",
+          "text": "Calcium lowers the absorption of this antibiotic. Take the antibiotic 2 hours before or 2 hours after calcium.",
+          "source": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+        },
+        {
+          "nutrient": "zinc",
+          "status": "caution",
+          "text": "Zinc lowers the absorption of this antibiotic. Take the antibiotic at least 2 hours before or 4 to 6 hours after zinc.",
+          "source": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "tetracycline",
+      "name": "Tetracycline antibiotics (doxycycline, tetracycline)",
+      "examples": [
+        "doxycycline",
+        "tetracycline",
+        "minocycline"
+      ],
+      "interactions": [
+        {
+          "nutrient": "zinc",
+          "status": "caution",
+          "text": "Zinc lowers the absorption of this antibiotic. Take the antibiotic at least 2 hours before or 4 to 6 hours after zinc.",
+          "source": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "dolutegravir",
+      "name": "Dolutegravir (HIV medicine)",
+      "examples": [
+        "dolutegravir",
+        "tivicay"
+      ],
+      "interactions": [
+        {
+          "nutrient": "calcium",
+          "status": "caution",
+          "text": "Calcium can greatly lower dolutegravir levels. Take dolutegravir 2 hours before or 6 hours after calcium.",
+          "source": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "lithium",
+      "name": "Lithium (bipolar disorder medicine)",
+      "examples": [
+        "lithium"
+      ],
+      "interactions": [
+        {
+          "nutrient": "calcium",
+          "status": "caution",
+          "text": "Long-term lithium can raise blood calcium, and calcium supplements could add to this. Ask your doctor first.",
+          "source": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "penicillamine",
+      "name": "Penicillamine (rheumatoid arthritis, Wilson disease)",
+      "examples": [
+        "penicillamine"
+      ],
+      "interactions": [
+        {
+          "nutrient": "zinc",
+          "status": "caution",
+          "text": "Zinc lowers the absorption of penicillamine. Take them at least 1 hour apart.",
+          "source": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "thiazide",
+      "name": "Thiazide water tablets (hydrochlorothiazide, chlorthalidone)",
+      "examples": [
+        "hydrochlorothiazide",
+        "chlorthalidone"
+      ],
+      "interactions": [
+        {
+          "nutrient": "zinc",
+          "status": "caution",
+          "text": "These medicines make you lose more zinc in urine. Ask your doctor whether you need zinc.",
+          "source": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "key": "warfarin",
+      "name": "Warfarin (blood thinner)",
+      "examples": [
+        "warfarin",
+        "coumadin"
+      ],
+      "interactions": [
+        {
+          "nutrient": "vitamin_k",
+          "status": "stop",
+          "text": "Vitamin K can seriously change how warfarin works. A sudden change in vitamin K can cause dangerous bleeding or blood clots. Don't start this without your doctor.",
+          "source": "https://ods.od.nih.gov/factsheets/VitaminK-Consumer/"
+        }
+      ]
+    }
+  ]
+}
