@@ -1,21 +1,36 @@
+# Python
 venv/
 __pycache__/
 *.pyc
-node_modules/
-.env
-.env.*
-.expo/
-*.dll
-*.pyd
-
-# secrets — never commit
-firebase-key.json
-*firebase-adminsdk*.json
-
-# local-only files
-*_backup.py
 .pytest_cache/
-backend/debug/
-backend/uploads/
-*.db
+
+# Secrets: never commit these
+.env
+.env*.local
+backend/firebase-key.json
+*firebase-adminsdk*.json
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# Downloads and results that can be made again
+backend/etl/dsld_cache.json
+backend/evals/results.json
+
+# Expo and Node
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+frontend/ios/
+frontend/android/
+
 .DS_Store
