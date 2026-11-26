@@ -1,0 +1,442 @@
+{
+ "_about": "Evaluation cases for the AI parts, run by evals/run_evals.py with the real embedding model and the real AI. retrieval: a question and words that must appear in the heading or text of a right passage. reports: the text on a pack (lines of text and their size, as the scan test does),  a person and what a correct report must contain. questions: a pack and an Ask MediSafe question and whether the NIH sources should cover them.",
+ "retrieval": [
+  {
+   "question": "What happens if I take too much vitamin B6?",
+   "topic": "vitamin_b6",
+   "expect": [
+    "excessive",
+    "neuropathy"
+   ]
+  },
+  {
+   "question": "Does iron interfere with my thyroid medicine?",
+   "topic": "iron",
+   "expect": [
+    "levothyroxine"
+   ]
+  },
+  {
+   "question": "Can vitamin K affect my blood thinner?",
+   "topic": "vitamin_k",
+   "expect": [
+    "warfarin"
+   ]
+  },
+  {
+   "question": "Can calcium tablets cause kidney stones?",
+   "topic": "calcium",
+   "expect": [
+    "kidney stone"
+   ]
+  },
+  {
+   "question": "Is ashwagandha safe in pregnancy?",
+   "topic": "ashwagandha",
+   "expect": [
+    "pregnan"
+   ]
+  },
+  {
+   "question": "What is the upper limit of vitamin D?",
+   "topic": "vitamin_d",
+   "expect": [
+    "upper",
+    "ul"
+   ]
+  },
+  {
+   "question": "Can too much zinc cause copper deficiency?",
+   "topic": "zinc",
+   "expect": [
+    "copper"
+   ]
+  },
+  {
+   "question": "Does magnesium cause diarrhea?",
+   "topic": "magnesium",
+   "expect": [
+    "diarrhea"
+   ]
+  },
+  {
+   "question": "Does folic acid prevent birth defects?",
+   "topic": "folate",
+   "expect": [
+    "neural tube"
+   ]
+  },
+  {
+   "question": "Does metformin lower vitamin B12?",
+   "topic": "vitamin_b12",
+   "expect": [
+    "metformin"
+   ]
+  },
+  {
+   "question": "Is a lot of vitamin A dangerous in pregnancy?",
+   "topic": "vitamin_a",
+   "expect": [
+    "pregnan",
+    "birth defect",
+    "teratogen"
+   ]
+  },
+  {
+   "question": "Why does niacin make my skin red and flushed?",
+   "topic": "niacin",
+   "expect": [
+    "flush"
+   ]
+  },
+  {
+   "question": "Can potassium supplements interact with blood pressure medicines?",
+   "topic": "potassium",
+   "expect": [
+    "ace inhibitor",
+    "angiotensin",
+    "diuretic"
+   ]
+  },
+  {
+   "question": "Can turmeric harm the liver?",
+   "topic": "turmeric",
+   "expect": [
+    "liver"
+   ]
+  },
+  {
+   "question": "Is garlic risky with blood thinners?",
+   "topic": "garlic",
+   "expect": [
+    "bleeding",
+    "warfarin",
+    "blood thinn",
+    "anticoagulant"
+   ]
+  },
+  {
+   "question": "Is melatonin safe for children?",
+   "topic": "melatonin",
+   "expect": [
+    "child"
+   ]
+  },
+  {
+   "question": "Does ginger help with nausea?",
+   "topic": "ginger",
+   "expect": [
+    "nausea"
+   ]
+  },
+  {
+   "question": "Do omega-3 supplements raise bleeding risk?",
+   "topic": "omega_3",
+   "expect": [
+    "bleeding",
+    "warfarin",
+    "anticoagulant"
+   ]
+  },
+  {
+   "question": "Does CoQ10 interact with warfarin?",
+   "topic": "coq10",
+   "expect": [
+    "warfarin"
+   ]
+  },
+  {
+   "question": "Can high dose vitamin E cause bleeding?",
+   "topic": "vitamin_e",
+   "expect": [
+    "bleeding",
+    "hemorrhag"
+   ]
+  },
+  {
+   "question": "Can biotin change my blood test results?",
+   "topic": "biotin",
+   "expect": [
+    "test",
+    "assay",
+    "laboratory"
+   ]
+  },
+  {
+   "question": "Who is at risk of thiamine deficiency?",
+   "topic": "vitamin_b1",
+   "expect": [
+    "alcohol"
+   ]
+  },
+  {
+   "question": "Can I take iron and calcium together?",
+   "topic": "iron",
+   "expect": [
+    "calcium"
+   ]
+  },
+  {
+   "question": "is iron safe for kids",
+   "topic": null,
+   "expect": [
+    "child",
+    "infant"
+   ]
+  },
+  {
+   "question": "which supplement interacts with levothyroxine",
+   "topic": null,
+   "expect": [
+    "levothyroxine"
+   ]
+  }
+ ],
+ "reports": [
+  {
+   "name": "typed thyroid medicine with iron",
+   "person": {
+    "age": 26,
+    "sex": "female",
+    "periods": "yes",
+    "other_medicines": [
+     "levothyroxine"
+    ]
+   },
+   "expect_verdict_at_least": "Use with caution",
+   "expect_concern_words": [
+    "levothyroxine",
+    "thyroid"
+   ],
+   "label": [
+    [
+     "Sangobion",
+     60
+    ],
+    [
+     "Each capsule contains: Iron 30 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "name": "warfarin with garlic",
+   "person": {
+    "age": 55,
+    "sex": "male",
+    "other_medicines": [
+     "warfarin"
+    ]
+   },
+   "expect_verdict_at_least": "Use with caution",
+   "expect_concern_words": [
+    "bleed",
+    "warfarin",
+    "blood thinn"
+   ],
+   "label": [
+    [
+     "Garlic Extract",
+     60
+    ],
+    [
+     "Each capsule contains: Garlic bulb extract 600 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "name": "kidney stones with calcium",
+   "person": {
+    "age": 50,
+    "sex": "male",
+    "conditions": [
+     "kidney stones"
+    ]
+   },
+   "expect_verdict_at_least": "Use with caution",
+   "expect_concern_words": [
+    "kidney"
+   ],
+   "label": [
+    [
+     "Calcium",
+     60
+    ],
+    [
+     "Each tablet contains: Calcium 600 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "name": "pregnant and ashwagandha",
+   "person": {
+    "age": 28,
+    "sex": "female",
+    "periods": "yes",
+    "pregnant": true
+   },
+   "expect_verdict_at_least": "Not safe",
+   "expect_concern_words": [],
+   "label": [
+    [
+     "Ashwagandha",
+     60
+    ],
+    [
+     "Each capsule contains: Ashwagandha root extract 500 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "name": "metformin with B12 is not a danger",
+   "person": {
+    "age": 52,
+    "sex": "female",
+    "periods": "no",
+    "other_medicines": [
+     "metformin"
+    ]
+   },
+   "expect_verdict_at_most": "Use with caution",
+   "expect_concern_words": [],
+   "label": [
+    [
+     "Vitamin B12",
+     60
+    ],
+    [
+     "Each tablet contains: Vitamin B12 1000 mcg",
+     10
+    ]
+   ]
+  },
+  {
+   "name": "healthy adult and vitamin C: no false alarm",
+   "person": {
+    "age": 30,
+    "sex": "female",
+    "periods": "yes"
+   },
+   "expect_verdict_at_most": "Safe",
+   "expect_concern_words": [],
+   "label": [
+    [
+     "Vitamin C",
+     60
+    ],
+    [
+     "Each tablet contains: Vitamin C 500 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "name": "child and melatonin",
+   "person": {
+    "age": 8,
+    "sex": "male"
+   },
+   "expect_verdict_at_least": "Use with caution",
+   "expect_concern_words": [],
+   "label": [
+    [
+     "Melatonin",
+     60
+    ],
+    [
+     "Each tablet contains: Melatonin 3 mg",
+     10
+    ]
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "question": "Can I take this with my thyroid tablet?",
+   "expect_covered": true,
+   "expect_words": [
+    "levothyroxine",
+    "4 hours"
+   ],
+   "label": [
+    [
+     "Sangobion",
+     60
+    ],
+    [
+     "Each capsule contains: Iron 30 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "question": "Can it give me kidney stones?",
+   "expect_covered": true,
+   "expect_words": [
+    "kidney"
+   ],
+   "label": [
+    [
+     "Calcium",
+     60
+    ],
+    [
+     "Each tablet contains: Calcium 600 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "question": "Is it safe while pregnant?",
+   "expect_covered": true,
+   "expect_words": [
+    "pregnan"
+   ],
+   "label": [
+    [
+     "Ashwagandha",
+     60
+    ],
+    [
+     "Each capsule contains: Ashwagandha root extract 500 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "question": "Who won the cricket world cup?",
+   "expect_covered": false,
+   "expect_words": [],
+   "label": [
+    [
+     "Vitamin C",
+     60
+    ],
+    [
+     "Each tablet contains: Vitamin C 500 mg",
+     10
+    ]
+   ]
+  },
+  {
+   "question": "Can my child take it?",
+   "expect_covered": true,
+   "expect_words": [
+    "child"
+   ],
+   "label": [
+    [
+     "Melatonin",
+     60
+    ],
+    [
+     "Each tablet contains: Melatonin 3 mg",
+     10
+    ]
+   ]
+  }
+ ]
+}
